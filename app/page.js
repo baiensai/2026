@@ -1,40 +1,7 @@
-import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react"
-import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react"
-
-import Link from "next/link"
-
 function Component() {
   return (
     <div>
-      <Navbar fluid rounded className="sticky top-0 z-50">
-        <NavbarBrand as={Link} href="https://flowbite-react.com">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite React Logo"
-          />
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite React
-          </span>
-        </NavbarBrand>
-        <NavbarToggle />
-        <NavbarCollapse>
-          <NavbarLink href="#" active>
-            Home
-          </NavbarLink>
-          <NavbarLink as={Link} href="#">
-            About
-          </NavbarLink>
-          <NavbarLink href="#">Services</NavbarLink>
-          <NavbarLink href="#">Pricing</NavbarLink>
-          <NavbarLink href="#">Contact</NavbarLink>
-        </NavbarCollapse>
-      </Navbar>
-
-
       <code>{`
-
-
 
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -105,33 +72,6 @@ function Component() {
 </nav>
 
 `}</code>
-
-
-
-
-    <Footer container>
-      <div className="w-full text-center">
-        <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
-          <FooterBrand
-            href="https://flowbite.com"
-            src="https://flowbite.com/docs/images/logo.svg"
-            alt="Flowbite Logo"
-            name="Flowbite"
-          />
-          <FooterLinkGroup>
-            <FooterLink href="#">About</FooterLink>
-            <FooterLink href="#">Privacy Policy</FooterLink>
-            <FooterLink href="#">Licensing</FooterLink>
-            <FooterLink href="#">Contact</FooterLink>
-          </FooterLinkGroup>
-        </div>
-        <FooterDivider />
-        <FooterCopyright href="#" by="Flowbite™" year={2022} />
-      </div>
-    </Footer>
-
-
-
     </div>
   )
 }
