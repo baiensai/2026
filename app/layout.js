@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar fluid rounded className="sticky top-0 z-50">
-          <NavbarBrand as={Link} href="#">
+          <NavbarBrand as={Link} href="/">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="mr-3 h-6 sm:h-9"
@@ -38,10 +38,10 @@ export default function RootLayout({ children }) {
           </NavbarBrand>
           <NavbarToggle />
           <NavbarCollapse>
-            <NavbarLink href="#" active>企画</NavbarLink>
-            <NavbarLink href="#">案内</NavbarLink>
-            <NavbarLink href="#">スケジュール</NavbarLink>
-            <NavbarLink href="#">マップ</NavbarLink>
+            <NavbarLink href="projects">企画</NavbarLink>
+            <NavbarLink href="info">案内</NavbarLink>
+            <NavbarLink href="timetable">スケジュール</NavbarLink>
+            <NavbarLink href="map">マップ</NavbarLink>
           </NavbarCollapse>
         </Navbar>
 
@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
           <div className="w-full text-center">
             <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
               <FooterBrand
-                href="#"
+                href="/"
                 src="https://flowbite.com/docs/images/logo.svg"
                 alt="Flowbite Logo"
                 name="Flowbite"
