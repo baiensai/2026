@@ -1,9 +1,129 @@
+import { HiExclamation, HiCalendar, HiMap, HiQuestionMarkCircle } from "react-icons/hi"
+import { Accordion, AccordionContent, AccordionPanel, accordionTheme, AccordionTitle, ThemeProvider } from "flowbite-react"
+
+const AccordionTheme = {
+  root: {
+    base: "!border-none",
+    flush: {
+      off: "",
+      on: "",
+    },
+  },
+  content: {
+    base:
+      "p-4 bg-white text-black !rounded-b-md border-b-1 border-l-1 border-r-1 border-neutral-400 !shadow-none",
+  },
+  title: {
+    arrow: {
+      base: "h-6 w-6 shrink-0 text-state-400",
+      open: {
+        off: "",
+        on: "rotate-180",
+      },
+    },
+    base:
+      "flex w-full items-center justify-between p-4 text-left font-medium text-black bg-neutral-100 !rounded-md mt-3 !border-b-0 !shadow-none",
+    flush: {
+      off: "hover:!bg-neutral-50 focus:!ring-0",
+      on: "bg-transparent",
+    },
+    heading: "",
+    open: {
+      off: "!rounded-md",
+      on: "bg-white text-black !rounded-t-md !rounded-b-none border-t-1 border-l-1 border-r-1 border-neutral-400 hover:!bg-white",
+    },
+  },
+}
+
+function AccordionItem({ question, answer }) {
+  return (
+    <AccordionPanel className="overflow-hidden !rounded-md">
+      <AccordionTitle className="text-base font-semibold">
+        {question}
+      </AccordionTitle>
+      <AccordionContent className="text-base">
+        {answer}
+      </AccordionContent>
+    </AccordionPanel>
+  )
+}
+
 function Info() {
   return (
     <div>
-      <p>トップページと同じ改めての時間と場所のやつ</p>
-      <p>注意事項</p>
-      <p>よくある質問</p>
+      <p className="text-3xl font-semibold text-center mt-6">ご案内</p>
+
+      <div className="px-4 sm:px-10">
+
+        <div className="mt-10">
+          <div className="flex items-center">
+            <HiCalendar className="w-12 h-12 mr-4" />
+            <p className="text-2xl font-medium">開催日時</p>
+          </div>
+          <div className="pl-4 mt-4">
+            <p className="text-lg">2025/8/23(土) 11:00~15:30(10:40からオープニングセレモニー)</p>
+            <p className="text-lg">2025/8/24(日) 9:30~14:30</p>
+            <p className="text-base text-gray-600">入場は終了時間の30分前まで</p>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <div className="flex items-center">
+            <HiMap className="w-12 h-12 mr-4" />
+            <p className="text-2xl font-medium">場所</p>
+          </div>
+          <div className="pl-4 mt-2">
+            <p className="text-lg mb-2 font-medium">福島県立福島高等学校</p>
+            <p className="text-base text-gray-600 mb-2">福島県福島市森合町5-72</p>
+            <p className="text-lg">駐車場がありませんので公共交通機関をご利用ください</p>
+          </div>
+          <div className="px-4 mt-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12616.19963752117!2d140.45184177143537!3d37.76542791183734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a85dd76f2fdf5%3A0xa88817bdb7977734!2z56aP5bO255yM56uL56aP5bO26auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1754281405073!5m2!1sja!2sjp" loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-64 rounded-lg"
+              title="県立福島高等学校のGoogleマップ"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <div className="flex items-center">
+            <HiExclamation className="w-12 h-12 mr-4" />
+            <p className="text-2xl font-medium">注意事項</p>
+          </div>
+          <div className="pl-4 mt-2">
+            {/* TODO: mapで表示するようにしたい */}
+            <p className="text-base mb-2">上履きをご持参ください。</p>
+            <p className="text-base mb-2">ごみは設置してあるゴミ箱に捨ててください。</p>
+            <p className="text-base mb-2">迷子や落とし物に関してはお近くの梅苑祭実行委員までお問い合わせください。</p>
+            <p className="text-base mb-2">校内での展示や企画の撮影は可能ですが、マナーを守ってください。SNSへのアップロードは行わないようお願いいたします。</p>
+            <p className="text-base mb-2">食べ歩きはご遠慮ください。</p>
+            <p className="text-base mb-2">水分補給等を十分に行い熱中症対策をしてください。</p>
+            <p className="text-base mb-2">感染症対策として教室に入る際は、手指消毒をお願いします。</p>
+          </div>
+        </div>
+
+        <div className="mt-10 mb-10">
+          <div className="flex items-center">
+            <HiQuestionMarkCircle className="w-12 h-12 mr-4" />
+            <p className="text-2xl font-medium">よくある質問</p>
+          </div>
+          <div className="px-4">
+            <ThemeProvider theme={{ accordion: AccordionTheme }} root={true}>
+              <Accordion collapseAll className="mt-2">
+                {/* TODO: mapで厳選した内容を入れる */}
+                <AccordionItem question="aaaa" answer="kkkkk" />
+                <AccordionItem question="ssss" answer="hhhhh" />
+                <AccordionItem question="dddd" answer="44444" />
+                <AccordionItem question="wwwww" answer="rrrrr" />
+                <AccordionItem question="qqqqq" answer="bbbbb" />
+              </Accordion>
+            </ThemeProvider>
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }
