@@ -23,13 +23,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased !bg-[#FCFCFC]`}
       >
-        <Navbar fluid rounded className="sticky top-0 z-50">
+        <Navbar fluid rounded className="sticky top-0 z-50 !bg-[#FFFFFF]">
           <NavbarBrand as={Link} href="/">
             <img
               src="logo.svg"
-              className="mr-3 h-6 sm:h-9"
+              className="ml-2 h-7 sm:h-11 my-1"
               alt="baiensai Logo"
             />
           </NavbarBrand>
@@ -44,9 +44,9 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <Footer container>
+        <Footer container className="bg-pink-50 !rounded-none">
           <div className="w-full text-center">
-            <div className="w-full justify-between sm:flex sm:items-center sm:justify-between">
+            <div className="w-full justify-between flex items-center justify-between">
               <FooterBrand
                 href="/"
                 src="logo.svg"
@@ -58,22 +58,22 @@ export default function RootLayout({ children }) {
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-pink-600 text-2xl"
+                  className="text-gray-800 hover:text-pink-600 text-2xl"
                 >
-                  <FaInstagram />
+                  <FaInstagram className="w-10 h-10" />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-green-500 text-2xl"
+                  className="text-gray-800 hover:text-green-500 text-2xl"
                 >
-                  <FaLine />
-                </a>
+                  <FaLine className="w-10 h-10" />
+                </a> */}
               </div>
             </div>
             <FooterDivider />
-            <FooterCopyright href="#" by="Soraki Yashiro" year={2025} />
+            <FooterCopyright href="https://github.com/Cosmic-rare" by="Soraki Yashiro" year={2025} />
           </div>
         </Footer>
       </body>
