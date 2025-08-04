@@ -1,6 +1,15 @@
 import Link from "next/link"
 import { Button } from "flowbite-react"
 import { HiOutlineArrowRight, HiCalendar, HiMap, HiNewspaper } from "react-icons/hi"
+import { GoDotFill } from "react-icons/go"
+
+const news = [
+  {
+    title: "公式サイト開設",
+    content: "梅苑祭2025公式ウェブサイトを開設しました。最新情報や詳細を確認できます。",
+    date: "2025.08.00"
+  },
+]
 
 function Index() {
   return (
@@ -58,7 +67,7 @@ function Index() {
 
       <div className="flex justify-center mt-14 mb-14">
         <div className="w-100">
-          <Button color="pink" pill as={Link} href="/info"><HiOutlineArrowRight className="mr-2 h-3 w-3" />注意事項・よくある質問はこちら</Button>
+          <Button color="pink" pill as={Link} href="/info">注意事項・よくある質問はこちら</Button>
         </div>
       </div>
 
@@ -68,7 +77,18 @@ function Index() {
           <p className="text-2xl font-medium">最新情報</p>
         </div>
         <div className="pl-4 mt-2">
-          あああああ
+          {
+            news.map((v, i) => (
+              <div className="my-4 grid grid-cols-[auto_1fr] gap-x-2 items-start" key={i}>
+                <GoDotFill className="text-pink-600 mt-1" />
+                <div>
+                  <p className="text-xl font-medium">{v.title}</p>
+                  <p className="text-sm">{v.date}</p>
+                  <p className="text-gray-700">{v.content}</p>
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
