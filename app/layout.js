@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
 
         <Footer container className="bg-pink-50 !rounded-none">
           <div className="w-full text-center">
-            <div className="w-full justify-between flex items-center justify-between">
+            <div className="w-full justify-between flex items-center">
               <FooterBrand
                 href="/"
                 src="logo.svg"
