@@ -3,6 +3,7 @@ import "./globals.css"
 import Link from "next/link"
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, FooterLinkGroup } from "flowbite-react"
 import { FaInstagram, FaLine } from "react-icons/fa"
+import { ThemeInit } from '../.flowbite-react/init'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased !bg-[#FCFCFC]`}
       >
+        <ThemeInit />
+
         <Navbar fluid rounded className="sticky top-0 z-50 !bg-[#FFFFFF]">
           <NavbarBrand as={Link} href="/">
             <img
