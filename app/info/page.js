@@ -86,26 +86,6 @@ function Info() {
 
         <div className="mt-10">
           <div className="flex items-center">
-            <HiMap className="w-12 h-12 mr-4" />
-            <p className="text-2xl font-medium">場所</p>
-          </div>
-          <div className="pl-4 mt-2">
-            <p className="text-lg mb-2 font-medium">福島県立福島高等学校</p>
-            <p className="text-base text-gray-600 mb-2">福島県福島市森合町5-72</p>
-            <p className="text-lg">駐車場がありませんので公共交通機関をご利用ください</p>
-          </div>
-          <div className="px-4 mt-2">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12616.19963752117!2d140.45184177143537!3d37.76542791183734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a85dd76f2fdf5%3A0xa88817bdb7977734!2z56aP5bO255yM56uL56aP5bO26auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1754281405073!5m2!1sja!2sjp" loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-64 rounded-lg"
-              title="県立福島高等学校のGoogleマップ"
-            ></iframe>
-          </div>
-        </div>
-
-        <div className="mt-10">
-          <div className="flex items-center">
             <HiExclamation className="w-12 h-12 mr-4" />
             <p className="text-2xl font-medium">注意事項</p>
           </div>
@@ -129,6 +109,26 @@ function Info() {
                 ))}
               </Accordion>
             </ThemeProvider>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <div className="flex items-center">
+            <HiMap className="w-12 h-12 mr-4" />
+            <p className="text-2xl font-medium">場所</p>
+          </div>
+          <div className="pl-4 mt-2">
+            <p className="text-lg mb-2 font-medium">福島県立福島高等学校</p>
+            <p className="text-base text-gray-600 mb-2">福島県福島市森合町5-72</p>
+            <p className="text-lg">駐車場がありませんので公共交通機関をご利用ください</p>
+          </div>
+          <div className="px-4 mt-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12616.19963752117!2d140.45184177143537!3d37.76542791183734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a85dd76f2fdf5%3A0xa88817bdb7977734!2z56aP5bO255yM56uL56aP5bO26auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1754281405073!5m2!1sja!2sjp" loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-64 rounded-lg"
+              title="県立福島高等学校のGoogleマップ"
+            ></iframe>
           </div>
         </div>
 
