@@ -1,6 +1,23 @@
 import { HiExclamation, HiCalendar, HiMap, HiQuestionMarkCircle } from "react-icons/hi"
 import { Accordion, AccordionContent, AccordionPanel, accordionTheme, AccordionTitle, ThemeProvider } from "flowbite-react"
 
+const precautions = [
+  "上履きをご持参ください。",
+  "ごみは設置してあるゴミ箱に捨ててください。",
+  "迷子や落とし物に関してはお近くの梅苑祭実行委員までお問い合わせください。",
+  "校内での展示や企画の撮影は可能ですが、マナーを守ってください。SNSへのアップロードは行わないようお願いいたします。",
+  "食べ歩きはご遠慮ください。",
+  "水分補給等を十分に行い熱中症対策をしてください。",
+  "感染症対策として教室に入る際は、手指消毒をお願いします。"
+]
+
+const FAQ = [
+  { question: "年齢制限はありますか？", answer: "但し、高校生のパワーが漲る梅苑「祭」ですので、大きい声や音が鳴る企画もあります。母子室等は用意しておりませんので、小さなお子様などとの来場の際はくれぐれもご注意ください。" },
+  { question: "来場の際にチケットなどは必要ですか？", answer: "チケットの用意はいたしません。ご自由にご参加ください。" },
+  { question: "入場料は無料ですか？", answer: "入場料は無料です。販売されているグッズや食事を購入する際には現金が必要となりますので、梅苑祭を最大限に楽しみたい方はお財布のご用意を忘れずにお願いします。" },
+  // もうちょいありそうなのでTODO:
+]
+
 const AccordionTheme = {
   root: {
     base: "!border-none",
@@ -93,14 +110,9 @@ function Info() {
             <p className="text-2xl font-medium">注意事項</p>
           </div>
           <div className="pl-4 mt-2">
-            {/* TODO: mapで表示するようにしたい */}
-            <p className="text-base mb-2">上履きをご持参ください。</p>
-            <p className="text-base mb-2">ごみは設置してあるゴミ箱に捨ててください。</p>
-            <p className="text-base mb-2">迷子や落とし物に関してはお近くの梅苑祭実行委員までお問い合わせください。</p>
-            <p className="text-base mb-2">校内での展示や企画の撮影は可能ですが、マナーを守ってください。SNSへのアップロードは行わないようお願いいたします。</p>
-            <p className="text-base mb-2">食べ歩きはご遠慮ください。</p>
-            <p className="text-base mb-2">水分補給等を十分に行い熱中症対策をしてください。</p>
-            <p className="text-base mb-2">感染症対策として教室に入る際は、手指消毒をお願いします。</p>
+            {precautions.map((v, i) => (
+              <p className="text-base mb-2" key={i}>{v}</p>
+            ))}
           </div>
         </div>
 
@@ -112,12 +124,9 @@ function Info() {
           <div className="px-4">
             <ThemeProvider theme={{ accordion: AccordionTheme }} root={true}>
               <Accordion collapseAll className="mt-2">
-                {/* TODO: mapで厳選した内容を入れる */}
-                <AccordionItem question="aaaa" answer="kkkkk" />
-                <AccordionItem question="ssss" answer="hhhhh" />
-                <AccordionItem question="dddd" answer="44444" />
-                <AccordionItem question="wwwww" answer="rrrrr" />
-                <AccordionItem question="qqqqq" answer="bbbbb" />
+                {FAQ.map((v, i) => (
+                  <AccordionItem key={i} question={v.question} answer={v.answer} />
+                ))}
               </Accordion>
             </ThemeProvider>
           </div>
