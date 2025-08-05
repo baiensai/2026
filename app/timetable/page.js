@@ -3,19 +3,19 @@ const BASE = 4 // 4px per 1min
 const TimeTableData = {
   date1: [
     { start: "10:00", length: 10, title: "オカズの残り物 presents ミームダンスパフォーマンス -This is world meme dance-", discription: "ダンス", subTitle: null, color: "pink" },
-    { start: "10:30", length: 60, title: "福島高校クイズ研究会", discription: "クイズバトル", subTitle: null, color: "rose" },
-    { start: "11:30", length: 15, title: "書道部", discription: "パフォーマンス,体育館後方", subTitle: null, color: "rose" },
-    { start: "11:50", length: 30, title: "梅響", discription: "管弦楽", subTitle: null, color: "yellow" },
-    { start: "12:30", length: 30, title: "有志吹奏楽団", discription: "吹奏楽", subTitle: null, color: "yellow" },
-    { start: "13:15", length: 5, title: "オテンキボックス", discription: "漫才", subTitle: null, color: "rose" },
-    { start: "13:20", length: 10, title: "ヨーヨー人from魅せる芸能集団", discription: "パフォーマンス", subTitle: null, color: "rose" },
-    { start: "13:35", length: 15, title: "Shero", discription: "ピアノ連弾", subTitle: null, color: "yellow" },
+    { start: "10:30", length: 60, title: "福島高校クイズ研究会", discription: "クイズバトル", subTitle: null, color: "pink" },
+    { start: "11:30", length: 15, title: "書道部", discription: "パフォーマンス,体育館後方", subTitle: null, color: "pink" },
+    { start: "11:50", length: 30, title: "梅響", discription: "管弦楽", subTitle: null, color: "orange" },
+    { start: "12:30", length: 30, title: "有志吹奏楽団", discription: "吹奏楽", subTitle: null, color: "orange" },
+    { start: "13:15", length: 5, title: "オテンキボックス", discription: "漫才", subTitle: null, color: "pink" },
+    { start: "13:20", length: 10, title: "ヨーヨー人from魅せる芸能集団", discription: "パフォーマンス", subTitle: null, color: "pink" },
+    { start: "13:35", length: 15, title: "Shero", discription: "ピアノ連弾", subTitle: null, color: "orange" },
     { start: "13:55", length: 20, title: "福島高校チアリーダー部", discription: null, subTitle: null, color: "pink" },
     { start: "14:15", length: 30, title: "ceon.", discription: "ダンス", subTitle: null, color: "pink" },
     { start: "14:55", length: 20, title: "ripe girls", discription: "ダンス", subTitle: null, color: "pink" },
     { start: "15:15", length: 10, title: "ALL for D", discription: "ダンス&DJ", subTitle: null, color: "pink" }],
   date2: [
-    { start: "09:30", length: 25, title: "田中", subTitle: null, discription: "DJ", color: "yellow" },
+    { start: "09:30", length: 25, title: "田中", subTitle: null, discription: "DJ", color: "orange" },
     { start: "09:55", length: 15, title: "Lemo/nade", subTitle: null, discription: "バンド", color: "orange" },
     { start: "10:20", length: 25, title: "ジャズ研究部", subTitle: null, discription: "ジャズ演奏", color: "yellow" },
     { start: "10:55", length: 25, title: "やりますバンド", subTitle: null, discription: "バンド", color: "orange" },
@@ -23,8 +23,8 @@ const TimeTableData = {
     { start: "12:05", length: 25, title: "鉄血宰相(仮)", subTitle: null, discription: "バンド", color: "orange" },
     { start: "12:40", length: 20, title: "Take Four", subTitle: null, discription: "バンド", color: "orange" },
     { start: "13:10", length: 20, title: "じゅりっこ", subTitle: null, discription: "ダンス", color: "pink" },
-    { start: "13:35", length: 25, title: "遠藤由深歌います♪", subTitle: null, discription: "歌唱", color: "yellow" },
-    { start: "14:00", length: 30, title: "図書委員会", subTitle: null, discription: "ビブリオバトル", color: "rose" }
+    { start: "13:35", length: 25, title: "遠藤由深歌います♪", subTitle: null, discription: "歌唱", color: "orange" },
+    { start: "14:00", length: 30, title: "図書委員会", subTitle: null, discription: "ビブリオバトル", color: "pink" }
   ]
 }
 
