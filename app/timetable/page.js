@@ -17,7 +17,7 @@ const TimeTableData = {
   date2: [
     { start: "09:30", length: 25, title: "田中", subTitle: null, discription: "DJ", color: "orange" },
     { start: "09:55", length: 15, title: "Lemo/nade", subTitle: null, discription: "バンド", color: "orange" },
-    { start: "10:20", length: 25, title: "ジャズ研究部", subTitle: null, discription: "ジャズ演奏", color: "yellow" },
+    { start: "10:20", length: 25, title: "ジャズ研究部", subTitle: null, discription: "ジャズ演奏", color: "orange" },
     { start: "10:55", length: 25, title: "やりますバンド", subTitle: null, discription: "バンド", color: "orange" },
     { start: "11:30", length: 25, title: "takogeso", subTitle: null, discription: "バンド", color: "orange" },
     { start: "12:05", length: 25, title: "鉄血宰相(仮)", subTitle: null, discription: "バンド", color: "orange" },
