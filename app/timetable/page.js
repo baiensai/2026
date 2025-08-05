@@ -1,6 +1,3 @@
-import { HiExclamation, HiCalendar, HiMap, HiQuestionMarkCircle } from "react-icons/hi"
-import { Accordion, AccordionContent, AccordionPanel, accordionTheme, AccordionTitle, ThemeProvider } from "flowbite-react"
-
 const BASE_HEIGHT = 20 //20px per 5min
 
 function TimeTable() {
@@ -21,7 +18,8 @@ function TimeTable() {
           <div className="w-1/7 bg-gray-100 p-2">
             <div className='text-center'>時間</div>
             {times.map((time) => (
-              <div key={time} className={`h-[${6 * BASE_HEIGHT}px] text-center`}>
+              <div key={time} className={`h-[120px] text-center`}>
+                {/* h-[120px] mean 6 * BASE_HEIGHT, height for 30min */}
                 {time}
               </div>
             ))}
@@ -31,7 +29,31 @@ function TimeTable() {
           <div className="w-3/7 bg-white py-2">
             1日目
             <div className="relative mx-4" style={{ top: '13px' }}>
-              <div className='z-10 absolute rounded-md bg-green-200 w-full shadow' style={{ top: '120px', height: '120px' }}>10:00-10:30</div>
+              {/* <div className='z-10 absolute rounded-md bg-green-200 w-full shadow' style={{ top: '120px', height: '120px' }}>10:00-10:30</div> */}
+
+              <div
+                className="absolute z-10 flex w-full flex-col items-start justify-center rounded-xl border-l-[6px] bg-green-50 px-2 py-1 shadow-md"
+                style={{
+                  top: '120px',
+                  height: '120px',
+                  color: 'rgb(27, 94, 32)',
+                  borderLeftColor: 'rgb(76, 175, 80)',
+                  fontWeight: 600,
+                  fontSize: '0.85rem',
+                  boxSizing: 'border-box',
+                  backdropFilter: 'blur(4px)',
+                  opacity: 0.95,
+                }}
+              >
+                <div className="mb-1 text-base font-semibold">武蔵のパクり</div>
+                <div className="mb-[1px] text-sm font-medium opacity-85" style={{ color: 'rgb(27, 94, 32)' }}>
+                  ごめんよあへあへ
+                </div>
+                <div className="mt-auto text-sm font-normal text-gray-700">10:00 - 10:30</div>
+              </div>
+
+
+
             </div>
             <div className='relative' style={{ top: '13px' }}>
               {Array.from({ length: 12 * 6 }, (_, i) => {
