@@ -8,7 +8,7 @@ const TimeTableData = {
     { start: "11:50", length: 30, title: "梅響", discription: "管弦楽", subTitle: null, color: "orange" },
     { start: "12:30", length: 30, title: "有志吹奏楽団", discription: "吹奏楽", subTitle: null, color: "orange" },
     { start: "13:15", length: 5, title: "オテンキボックス", discription: "漫才", subTitle: null, color: "pink" },
-    { start: "13:20", length: 10, title: "ヨーヨー人from魅せる芸能集団", discription: "パフォーマンス", subTitle: null, color: "pink" },
+    { start: "13:20", length: 10, title: "ヨーヨー人from雑すぎる雑技団", discription: "パフォーマンス", subTitle: null, color: "pink" },
     { start: "13:35", length: 15, title: "Shero", discription: "ピアノ連弾", subTitle: null, color: "orange" },
     { start: "13:55", length: 20, title: "福島高校チアリーダー部", discription: null, subTitle: null, color: "pink" },
     { start: "14:15", length: 30, title: "ceon.", discription: "ダンス", subTitle: null, color: "pink" },
