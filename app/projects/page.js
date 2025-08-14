@@ -3,8 +3,8 @@ import Card from "../_components/card"
 
 function Projects() {
   return (
-<div className="grid grid-cols-2 md:grid-cols-3 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 md:px-12 md:max-w-[1000px] mx-2 md:mx-0">
-        <Card />
+<div className="grid grid-cols-2 md:grid-cols-3 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 px-2 md:px-12 max-w-[1000px] mx-auto">      
+    <Card />
       <Card />
       <Card />      <Card />
       <Card />
