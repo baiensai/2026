@@ -1,9 +1,22 @@
 import Card from "../_components/card"
+{/* <div className="flex flex-col md:flex-row md:space-x-4 md:px-3 mx-8 md:mx-0 space-y-4 md:space-y-0"> */}
 
 function Projects() {
   return (
-    <div className="flex space-x-3 px-3">
+<div className="grid grid-cols-2 md:grid-cols-3 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 md:px-12 md:max-w-[1000px] mx-2 md:mx-0">
+        <Card />
       <Card />
+      <Card />      <Card />
+      <Card />
+      <Card />      <Card />
+      <Card />
+      <Card />      <Card />
+      <Card />
+      <Card />      <Card />
+      <Card />
+      <Card />      <Card />
+      <Card />
+      <Card />      <Card />
       <Card />
       <Card />
       {/* <p>企画一覧</p>
