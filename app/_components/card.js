@@ -1,8 +1,8 @@
 import { IoMdPin, IoMdHeart } from "react-icons/io"
 
-function Card({ data }) {
+function Card({ data, setOpenModal }) {
   return (
-    <div className="w-full p-1 border-[2px] border-red-300 rounded-xl bg-[#FFFFFF]">
+    <div className="w-full p-1 border-[2px] border-red-300 rounded-xl bg-[#FFFFFF]" onClick={() => { setOpenModal(data) }}>
       <div className="flex flex-col md:flex-row items-center">
         <img src={data.icon} className="w-15 h-15 md:w-20 md:h-20 rounded-md mr-auto md:mr-2" />
         <div className="w-full mt-2 md:mt-0">

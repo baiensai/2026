@@ -30,7 +30,7 @@ const datas = [
     title: "takogeso",
     organization: "",
     description: "",
-    modalDescription: <img src="/icons/.JPG" />
+    modalDescription: <img src="/IMG_5627.jpg" />
   },
   {
     icon: "/icons/22.png",

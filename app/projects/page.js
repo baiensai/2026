@@ -1,7 +1,9 @@
 "use client"
 
 import Card from "../_components/card"
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "flowbite-react"
 import datas from "./_data"
+import ModalContent from "../_components/modalContent"
 import { useState, useMemo } from "react"
 import Fuse from "fuse.js"
 
@@ -46,33 +48,45 @@ function Projects() {
     );
   };
 
+  const [openModal, setOpenModal] = useState(null)
+
   return (
     <div className="px-2 md:px-12 max-w-[1000px] mx-auto mb-10">
-      <div className="max-w-[550px] md:max-w-[1000px] mx-auto">
-      {/* 検索ボックス */}
-      <input
-        type="text"
-        placeholder="企画名や説明で検索"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        className="mt-4 w-full p-2 border border-gray-300 rounded mb-4"
-      />
 
-      {/* タグフィルター */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {allTags.map(tag => (
-          <button
-            key={tag}
-            onClick={() => toggleTag(tag)}
-            className={`text-sm px-3 py-1 rounded-full border ${selectedTags.includes(tag)
+      <Modal dismissible show={openModal} onClose={() => setOpenModal(null)}>
+        <ModalBody>
+          <div className="space-y-6">
+            <ModalContent data={openModal} />
+          </div>
+          <Button onClick={() => setOpenModal(null)}>close</Button>
+        </ModalBody>
+      </Modal>
+
+      <div className="max-w-[550px] md:max-w-[1000px] mx-auto">
+        {/* 検索ボックス */}
+        <input
+          type="text"
+          placeholder="企画名や説明で検索"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="mt-4 w-full p-2 border border-gray-300 rounded mb-4"
+        />
+
+        {/* タグフィルター */}
+        <div className="flex flex-wrap gap-2 mb-4">
+          {allTags.map(tag => (
+            <button
+              key={tag}
+              onClick={() => toggleTag(tag)}
+              className={`text-sm px-3 py-1 rounded-full border ${selectedTags.includes(tag)
                 ? "bg-blue-400 text-white border-blue-600 border-2"
                 : "bg-gray-100 text-gray-700"
-              }`}
-          >
-            {tag}
-          </button>
-        ))}
-      </div>
+                }`}
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* 件数表示 */}
@@ -86,7 +100,7 @@ function Projects() {
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 sm:gap-y-5 gap-x-2 sm:gap-x-5 max-w-[475px] sm:max-w-full mx-auto">
           {results.map((data, i) => (
-            <Card data={data} key={i} />
+            <Card data={data} key={i} setOpenModal={setOpenModal} />
           ))}
         </div>
       )}
@@ -97,7 +111,7 @@ function Projects() {
       </div>
     </div>
   )
-  
+
   // return (
   //   <div className="grid grid-cols-2 md:grid-cols-3 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5 px-2 md:px-12 max-w-[1000px] mx-auto">
   //     {datas.map((data, i) => (
