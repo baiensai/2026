@@ -11,7 +11,7 @@ function Card({ data }) {
             <p className="text-sm md:text-base">{data.place}</p>
           </div>
           <div className="flex items-center justify-between w-full">
-            <div className="flex gap-1">
+            <div className="flex gap-1 flex-col items-start">
               {data.tags.map((tag, i) => (
                 <p className={`border-2 rounded-full border-${tag.color}-500 bg-${tag.color}-100 px-1 text-xs md:text-sm`} key={i}>{tag.text}</p>
               ))}
