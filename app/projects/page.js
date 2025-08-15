@@ -47,14 +47,15 @@ function Projects() {
   };
 
   return (
-    <div className="px-2 md:px-12 max-w-[1000px] mx-auto">
+    <div className="px-2 md:px-12 max-w-[1000px] mx-auto mb-10">
+      <div className="max-w-[550px] md:max-w-[1000px] mx-auto">
       {/* 検索ボックス */}
       <input
         type="text"
         placeholder="企画名や説明で検索"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="w-full p-2 border border-gray-300 rounded mb-4"
+        className="mt-4 w-full p-2 border border-gray-300 rounded mb-4"
       />
 
       {/* タグフィルター */}
@@ -63,8 +64,8 @@ function Projects() {
           <button
             key={tag}
             onClick={() => toggleTag(tag)}
-            className={`px-3 py-1 rounded-full border ${selectedTags.includes(tag)
-                ? "bg-blue-500 text-white"
+            className={`text-sm px-3 py-1 rounded-full border ${selectedTags.includes(tag)
+                ? "bg-blue-400 text-white border-blue-600 border-2"
                 : "bg-gray-100 text-gray-700"
               }`}
           >
@@ -72,9 +73,10 @@ function Projects() {
           </button>
         ))}
       </div>
+      </div>
 
       {/* 件数表示 */}
-      <p className="mb-4 text-sm text-gray-600">
+      <p className="mb-6 mt-6 text-sm text-gray-600 text-center">
         {results.length} 件の企画が見つかりました
       </p>
 
@@ -82,7 +84,7 @@ function Projects() {
       {results.length === 0 ? (
         <p className="text-center text-gray-500">一致する企画はありませんでした。</p>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-y-2 md:gap-y-5 gap-x-2 md:gap-x-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 sm:gap-y-5 gap-x-2 sm:gap-x-5 max-w-[475px] sm:max-w-full mx-auto">
           {results.map((data, i) => (
             <Card data={data} key={i} />
           ))}
