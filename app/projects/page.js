@@ -1,7 +1,7 @@
 "use client"
 
 import Card from "../_components/card"
-import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "flowbite-react"
+import { Modal, ModalBody } from "flowbite-react"
 import { IoCloseCircleOutline } from "react-icons/io5"
 import datas from "./_data"
 import ModalContent from "../_components/modalContent"
