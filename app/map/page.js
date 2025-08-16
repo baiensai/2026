@@ -17,22 +17,7 @@ export default function Map() {
 
   return (
     <div>
-      <TransformWrapper wheel={{ step: 0.1 }} pinch={{ step: 5 }} doubleClick={{ disabled: true }}>
-        {({ state }) => (
-          <TransformComponent
-            wrapperStyle={{ width: "100%", height: "80vh", overflow: "hidden" }}
-            contentStyle={{ width: "fit-content", height: "fit-content" }}
-          >
-            <div className="relative inline-block" ref={containerRef}>
-              <img src="/illustration.jpg" alt="illustration" className="block" />
-              <div
-                className="absolute top-0 left-0 w-full h-full cursor-pointer"
-                onClick={handleClick}
-              />
-            </div>
-          </TransformComponent>
-        )}
-      </TransformWrapper>
+      計画性不足により工事中
     </div>
   );
 }
