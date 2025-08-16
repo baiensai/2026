@@ -53,7 +53,7 @@ function Search() {
 
   return (
     <>
-      <Modal dismissible show={openModal} onClose={() => setOpenModal(null)}>
+      <Modal dismissible show={openModal} onClose={() => setOpenModal(null)} className="[&_*]:focus-visible:outline-none">
         <ModalBody>
           <div className="flex flex-row-reverse">
             <IoCloseCircleOutline className="w-7 h-7" onClick={() => setOpenModal(null)} />
