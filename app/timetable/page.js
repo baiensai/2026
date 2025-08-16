@@ -1,3 +1,11 @@
+"use client"
+
+import { Modal, ModalBody } from "flowbite-react"
+import { useState } from "react"
+import { IoCloseCircleOutline } from "react-icons/io5"
+import datas from "../projects/_data"
+import ModalContent from "../_components/modalContent"
+
 const BASE = 4 // 4px per 1min
 
 const TimeTableData = {
@@ -47,7 +55,7 @@ function getStartAndEndTime(startTimeStr, durationMinutes) {
   };
 }
 
-function TimeTableItem({ start, length, title, subTitle, discription, color }) {
+function TimeTableItem({ start, length, title, subTitle, discription, color, setOpenModal, ind }) {
   const times = getStartAndEndTime(start, length)
   const top = ((times.startHour - 9) * 60 + times.startMin - 30) * BASE
   const height = length * BASE - 1
@@ -60,6 +68,7 @@ function TimeTableItem({ start, length, title, subTitle, discription, color }) {
         height: height + 'px',
         boxSizing: 'border-box',
       }}
+      onClick={() => { setOpenModal(datas[ind]) }}
     >
       {length >= 15 ?
         <>
@@ -104,8 +113,21 @@ function TimeTable() {
     return `${hour.toString().padStart(2, '0')}:${minute}`
   })
 
+    const [openModal, setOpenModal] = useState(null)
+
   return (
     <div>
+            <Modal dismissible show={openModal} onClose={() => setOpenModal(null)}>
+        <ModalBody>
+          <div className="flex flex-row-reverse">
+            <IoCloseCircleOutline className="w-7 h-7" onClick={() => setOpenModal(null)} />
+          </div>
+          <div className="">
+            <ModalContent data={openModal} />
+          </div>
+        </ModalBody>
+      </Modal>
+
       <p className="text-3xl font-semibold text-center mt-6">1体タイムテーブル</p>
 
       <div className="mx-2 md:mx-8 sm:px-10 mt-6 mb-8">
@@ -137,7 +159,7 @@ function TimeTable() {
             <div className="text-center text-lg font-semibold">1日目 (8/23)</div>
             <div className="relative mx-2 md:mx-8" style={{ top: '11px' }}>
               {TimeTableData.date1.map((v, i) => (
-                <TimeTableItem start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} />
+                <TimeTableItem setOpenModal={setOpenModal} start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} ind={i} />
               ))}
             </div>
             <div className="relative" style={{ top: '11px' }}>
@@ -167,7 +189,7 @@ function TimeTable() {
             <div className="text-center text-lg font-semibold">2日目 (8/24)</div>
             <div className="relative mx-2 md:mx-8" style={{ top: '11px' }}>
               {TimeTableData.date2.map((v, i) => (
-                <TimeTableItem start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} />
+                <TimeTableItem setOpenModal={setOpenModal} start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} ind={i+12} />
               ))}
             </div>
             <div className="relative" style={{ top: '11px' }}>
