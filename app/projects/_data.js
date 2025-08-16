@@ -30,7 +30,8 @@ const datas = [
     title: "takogeso",
     organization: "",
     description: "",
-    modalDescription: <img src="/IMG_5627.jpg" />
+    modalDescription: <img src="/IMG_5627.jpg" />,
+    timeDescription: "あへあへあへあへ"
   },
   {
     icon: "/icons/22.png",
@@ -284,8 +285,8 @@ STARWARS episode3-2
       <p>3-4ロボット劇『出撃 H.O.P.E.』
         少年少女がロボットを駆使し平和を脅かす敵に立ち向かっていくSFアクション！！
         完全オリジナルの脚本をお楽しみください</p>
-      <img src='3-4table.jpg' />
-    </>
+      </>,
+    timeDescription: <img src='3-4table.jpg' />
   },
   {
     icon: "/icons/3-5.JPG",
@@ -308,7 +309,7 @@ STARWARS episode3-2
     title: "アラジン",
     organization: "",
     description: "",
-    modalDescription: <img src='3-6table.jpg' />
+    timeDescription: <img src='3-6table.jpg' />
   },
   {
     icon: "/icons/3-7.JPG",

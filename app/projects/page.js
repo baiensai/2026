@@ -2,6 +2,7 @@
 
 import Card from "../_components/card"
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader } from "flowbite-react"
+import { IoCloseCircleOutline } from "react-icons/io5"
 import datas from "./_data"
 import ModalContent from "../_components/modalContent"
 import { useState, useMemo } from "react"
@@ -55,10 +56,12 @@ function Projects() {
 
       <Modal dismissible show={openModal} onClose={() => setOpenModal(null)}>
         <ModalBody>
-          <div className="space-y-6">
+          <div className="flex flex-row-reverse">
+            <IoCloseCircleOutline className="w-7 h-7" onClick={() => setOpenModal(null)} />
+          </div>
+          <div className="">
             <ModalContent data={openModal} />
           </div>
-          <Button onClick={() => setOpenModal(null)}>close</Button>
         </ModalBody>
       </Modal>
 
