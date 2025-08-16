@@ -18,7 +18,7 @@ const FAQ = [
   // もうちょいありそうなのでTODO:
 ]
 
-const AccordionTheme = {
+export const AccordionTheme = {
   root: {
     base: "!border-none",
     flush: {
@@ -52,7 +52,7 @@ const AccordionTheme = {
   },
 }
 
-function AccordionItem({ question, answer }) {
+export function AccordionItem({ question, answer }) {
   return (
     <AccordionPanel className="overflow-hidden !rounded-md">
       <AccordionTitle className="text-base font-semibold">
