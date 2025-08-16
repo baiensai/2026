@@ -1,5 +1,27 @@
 const datas = [
   {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "ダンス" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "オカズの残り物 presents ミームダンスパフォーマンス -This is world meme dance-",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "クイズバトル" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "福島高校クイズ研究会",
+    organization: "",
+    description: ""
+  },
+  {
     icon: "/icons/3.png",
     place: "1体後方",
     tags: [
@@ -11,13 +33,145 @@ const datas = [
     description: "書道部員が3m×5mもの大きな紙の上で書のパフォーマンスを披露します!"
   },
   {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "管弦楽" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "梅響",
+    organization: "梅響",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "吹奏楽" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "有志吹奏楽団",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "漫才" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "オテンキボックス",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "パフォーマンス" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "ヨーヨー人from雑すぎる雑技団",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "ピアノ連弾" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "Shero",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "有志" },
+    ],
+    title: "福島高校チアリーダー部",
+    organization: "福島高校チアリーダー部",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "ダンス" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "ceon.",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "ダンス" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "ripe girls",
+    organization: "",
+    description: ""
+  },
+  {
     icon: "/icons/12.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "ダンス" },
       { color: "blue", text: "DJ" },
+      { color: "blue", text: "有志" },
     ],
     title: "All for D",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "DJ" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "田中",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "バンド" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "Lemo/nade",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "ジャズ演奏" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "ジャズ研究部",
+    organization: "ジャズ研究部",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "バンド" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "やりますバンド",
     organization: "",
     description: ""
   },
@@ -32,6 +186,50 @@ const datas = [
     description: "",
     modalDescription: <img src="/IMG_5627.jpg" />,
     timeDescription: "あへあへあへあへ"
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "バンド" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "鉄血宰相(仮)",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "バンド" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "Take Four",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "ダンス" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "じゅりっこ",
+    organization: "",
+    description: ""
+  },
+  {
+    icon: "/icons/99.png",
+    place: "1体ステージ",
+    tags: [
+      { color: "blue", text: "歌唱" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "遠藤由深歌います♪",
+    organization: "",
+    description: ""
   },
   {
     icon: "/icons/22.png",
