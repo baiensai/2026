@@ -1,10 +1,13 @@
+import Image from "next/image"
+import Illustration from "../../public/illustration.jpg"
+
 function Theme() {
   return (
     <div className="px-2 sm:px-4 max-w-3xl mx-auto mt-10">
       <p className="text-gray-800 text-2xl font-semibold mb-2">梅苑祭について</p>
       <p className="mb-12">梅苑祭は男子校時代である、1970年頃から続く福島高校伝統の文化祭です。県内唯一の毎年公開の文化祭であり、時代は変わっても、梅苑祭に対する福高生の情熱、個性を表現する場として梅苑祭の存在は始まった当時と変わらずに受け継がれてきました。</p>
 
-      <img className="max-w-[500px] w-full md:w-150 mx-auto rounded-xl border-gray-600 border-3 mt-2 mb-5" src="/illustration.jpg" />
+      <Image alt="テーマイラスト" src={Illustration} className="max-w-[500px] w-full md:w-150 mx-auto rounded-xl border-gray-600 border-3 mt-2 mb-5" />
       <p className="text-gray-800 text-2xl font-semibold mb-2 mt-12">スローガンについて</p>      
       <p className="mb-2">
         今年度の梅苑祭スローガンは「EXCEED POTENTIAL」(可能性を超えろ)。このスローガンは大阪・関西万博を連想させる「EXPO」を含み、今年度の梅苑祭が、本校生一人一人が限界にとらわれず、可能性を超えて個性や情熱を表現するいわば福高生にとっての"万博"になること期待しています。
