@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
 
               <div className="flex mt-4 sm:mt-0 sm:ml-6 gap-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/baijitsu_2025/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 hover:text-pink-600 text-2xl"
