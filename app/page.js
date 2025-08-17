@@ -16,7 +16,7 @@ function Index() {
     <div className="px-2 sm:px-4 max-w-4xl mx-auto mt-10">
       <div className="mb-6 px-4">
         <p className="text-xl font-medium mb-4">福島高校文化祭 梅苑祭2025</p>
-        <p className="text-[3.75em] font-bold"><span className="text-red-500">EX</span>CEED <span className="text-blue-500">PO</span>TETIAL</p>
+        <p className="text-[3.75em] font-bold"><span className="text-red-500">EX</span>CEED <span className="text-blue-500">PO</span>TENTIAL</p>
         <p className="text-2xl">ー 可能性を超えろ</p>
 
         <div className="flex justify-center mt-4 mb-4">
