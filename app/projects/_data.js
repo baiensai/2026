@@ -185,7 +185,7 @@ const datas = [
     organization: "",
     description: "",
     modalDescription: <img src="/IMG_5627.jpg" />,
-    timeDescription: "あへあへあへあへ"
+    timeDescription: ""
   },
   {
     icon: "/icons/99.png",
@@ -563,5 +563,6 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
   },
 
 ]
+
 
 export default datas
