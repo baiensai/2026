@@ -4,7 +4,10 @@ import React, { useState } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 import { Button } from "flowbite-react"
 import datas from "../projects/_data"
+import ModalContent from "../_components/modalContent"
+import { IoCloseCircleOutline } from "react-icons/io5"
 import Image from "next/image"
+import { Modal, ModalBody } from "flowbite-react"
 
 const floors34 = [
   { value: 1, label: "1階" },
@@ -44,7 +47,7 @@ function FloorSelector({ onSelect, setSelected, selected, floors }) {
   )
 }
 
-function ZoomableMap({ aspect, imgSrc }) {
+function ZoomableMap({ aspect, imgSrc, setOpenModal }) {
   return (
     <div className={`w-full aspect-[${aspect}]`}>
       <TransformWrapper wheel={{ step: 0.1 }} pinch={{ step: 5 }} doubleClick={{ disabled: true }}>
@@ -59,7 +62,7 @@ function ZoomableMap({ aspect, imgSrc }) {
                 {datas.map((data, i) => {
                   if (data.map == imgSrc) {
                     return (
-                      <Image alt='' height={33} width={33} src={data.icon} key={i} className={`h-[33px] w-[33px] absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0]}px`, left: `${data.pos[1]}px`, pointerEvents: "all" }} onClick={() => console.log(data)} />
+                      <Image alt='' height={33} width={33} src={data.icon} key={i} className={`h-[33px] w-[33px] absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0]}px`, left: `${data.pos[1]}px`, pointerEvents: "all" }} onClick={() => setOpenModal(data)} />
                     )
                   }
                 })}
@@ -76,8 +79,21 @@ export default function Map() {
   const [selected34, setSelected34] = useState(1)
   const [selected12, setSelected12] = useState(1)
 
+    const [openModal, setOpenModal] = useState(null)
+
   return (
     <div className="flex justify-center">
+            <Modal dismissible show={openModal} onClose={() => setOpenModal(null)} className="[&_*]:focus-visible:outline-none">
+        <ModalBody>
+          <div className="flex flex-row-reverse">
+            <IoCloseCircleOutline className="w-7 h-7" onClick={() => setOpenModal(null)} />
+          </div>
+          <div className="">
+            <ModalContent data={openModal} />
+          </div>
+        </ModalBody>
+      </Modal>
+
       <div className="px-4 sm:px-10 mx-2 md:mx-auto max-w-[700px]">
         <p className="text-3xl font-semibold text-center mt-6 mb-6">校内マップ</p>
 
@@ -85,23 +101,23 @@ export default function Map() {
           <p className="text-xl font-semibold">3,4棟</p>
           <FloorSelector setSelected={setSelected34} selected={selected34} floors={floors34} />
         </div>
-        <ZoomableMap aspect={'1'} imgSrc={selected34} />
+        <ZoomableMap aspect={'1'} imgSrc={selected34} setOpenModal={setOpenModal} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
           <p className="text-xl font-semibold">1,2棟</p>
           <FloorSelector setSelected={setSelected12} selected={selected12} floors={floors12} />
         </div>
-        <ZoomableMap aspect={'1.16'} imgSrc={selected12 + 4} />
+        <ZoomableMap aspect={'1.16'} imgSrc={selected12 + 4} setOpenModal={setOpenModal} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
           <p className="text-xl font-semibold">1体</p>
         </div>
-        <ZoomableMap aspect={'1.38'} imgSrc={`8`} />
+        <ZoomableMap aspect={'1.38'} imgSrc={`8`} setOpenModal={setOpenModal} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
           <p className="text-xl font-semibold">2体</p>
         </div>
-        <ZoomableMap aspect={'1.2'} imgSrc={`9`} />
+        <ZoomableMap aspect={'1.2'} imgSrc={`9`} setOpenModal={setOpenModal} />
 
       </div>
     </div>
