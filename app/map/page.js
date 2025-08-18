@@ -62,7 +62,7 @@ function ZoomableMap({ aspect, imgSrc, setOpenModal }) {
                 {datas.map((data, i) => {
                   if (data.map == imgSrc) {
                     return (
-                      <Image alt='' height={33} width={33} src={data.icon} key={i} className={`h-[33px] w-[33px] absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0]}px`, left: `${data.pos[1]}px`, pointerEvents: "all" }} onClick={() => setOpenModal(data)} />
+                      <Image alt='' height={33} width={33} src={data.icon} key={i} className={`absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0] / 337 * 100}%`, left: `${data.pos[1] / 337 / aspect * 100}%`, pointerEvents: "all", width: `${33 / 337 * 100}%`, height: `${33 / 337 * 100}%` }} onClick={() => setOpenModal(data)} />
                     )
                   }
                 })}

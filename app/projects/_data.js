@@ -269,7 +269,7 @@ const datas = [
       さあ。皆様！一日限りのギャンブラーになって、最高の思い出を作りましょう！
     </p>,
     map: 4,
-    pos: [229, 187]
+    pos: [228, 187]
   },
   {
     icon: "/icons/1-2.JPG",
@@ -287,7 +287,7 @@ const datas = [
       この事件のトリックを解いて犯人を当てろ！真実の扉を開けるのは君だ！
     </p>,
     map: 4,
-    pos: [229, 143]
+    pos: [228, 143]
   },
   {
     icon: "/icons/1-3.JPG",
@@ -300,7 +300,7 @@ const datas = [
     organization: "",
     description: "",
     map: 4,
-    pos: [229, 99]
+    pos: [228, 99]
   },
   {
     icon: "/icons/1-4.JPG",
@@ -327,7 +327,7 @@ const datas = [
       勝っても負けても景品プレゼント!ここだけの特別な体験をぜひお楽しみください。
     </p>,
     map: 4,
-    pos: [229, 54]
+    pos: [228, 54]
   },
   {
     icon: "/icons/1-5.JPG",
@@ -358,7 +358,7 @@ const datas = [
       そこで現れたのは子供の幽霊ポモであった！ポモは生前、両親に遊んで貰えなかった。その代わりに主人公達にいたずらをしてくる。そのいたずらに耐えて、ポモを満足させ御札を使い成仏させよう！
     </p>,
     map: 4,
-    pos: [67, 54]
+    pos: [68, 54]
   },
   {
     icon: "/icons/1-7.JPG",
@@ -384,7 +384,7 @@ const datas = [
     organization: "",
     description: `トロッコアドベンチャーへようこそ！2年1組では、トロッコにのって擬似的にネプリーグのような世界観を味わいながら2択クイズを解いていく臨場感のある体験を味わうことができます！身近なジャンルからマニアックなジャンルまでありとあらゆるクイズがピックアップ！果たして、全問正解するのは誰だ！？`,
     map: 3,
-    pos: [229, 187]
+    pos: [228, 187]
   },
   {
     icon: "/icons/2-2.JPG",
@@ -397,7 +397,7 @@ const datas = [
     organization: "",
     description: "",
     map: 3,
-    pos: [229, 143]
+    pos: [228, 143]
   },
   {
     icon: "/icons/2-3.JPG",
@@ -410,7 +410,7 @@ const datas = [
     organization: "",
     description: "",
     map: 3,
-    pos: [229, 99]
+    pos: [228, 99]
   },
   {
     icon: "/icons/2-4.JPG",
@@ -434,7 +434,7 @@ const datas = [
       ぜひお越しください。
     </p>,
     map: 3,
-    pos: [229, 54]
+    pos: [228, 54]
   },
   {
     icon: "/icons/2-5.JPG",
@@ -477,7 +477,7 @@ const datas = [
     organization: "",
     description: `ここはあの映画化した大人気ゲーム｢マインクラフト｣の世界！！マイクラの世界にいきなり放り出されたプレイヤーになりきって村人たちと交易したり、マイクラならではのクラフトをしたりして、目指すはボス（敵MOB）のところへ！！無事ボスを倒して現実の世界に戻ることは出来るのか！？`,
     map: 3,
-    pos: [67, 54]
+    pos: [68, 54]
   },
   {
     icon: "/icons/2-7.JPG",
@@ -513,7 +513,7 @@ const datas = [
     description: ``,
     timeDescription: <img src='3-1table.jpg' />,
     map: 2,
-    pos: [229, 187]
+    pos: [228, 187]
   },
   {
     icon: "/icons/3-2.JPG",
@@ -538,7 +538,7 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     </p>,
     timeDescription: <img src='3-2table.jpg' />,
     map: 2,
-    pos: [229, 143]
+    pos: [228, 143]
   },
   {
     icon: "/icons/3-3.JPG",
@@ -552,7 +552,7 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     description: "",
     timeDescription: <img src='3-3table.jpg' />,
     map: 2,
-    pos: [229, 99]
+    pos: [228, 99]
   },
   {
     icon: "/icons/3-4.JPG",
@@ -579,7 +579,7 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     </p>,
     timeDescription: <img src='3-4table.jpg' />,
     map: 2,
-    pos: [229, 54]
+    pos: [228, 54]
   },
   {
     icon: "/icons/3-5.JPG",
@@ -607,7 +607,7 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     description: "",
     timeDescription: <img src='3-6table.jpg' />,
     map: 2,
-    pos: [67, 54]
+    pos: [68, 54]
   },
   {
     icon: "/icons/3-7.JPG",
