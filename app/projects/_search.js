@@ -64,7 +64,7 @@ function Search() {
         </ModalBody>
       </Modal>
 
-      <div className="max-w-[550px] md:max-w-[1000px] mx-auto">
+      <div className="">
         {/* 検索ボックス */}
         <input
           type="text"
