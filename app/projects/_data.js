@@ -267,7 +267,9 @@ const datas = [
       ポーカー・大富豪・ルーレット・チンチロの４つのゲームで運試しはいかがですか？<br />
       当カジノの自慢はアメリカンな雰囲気ととびきりキュートな女装男子！？私たちが皆様を最高のエンターテインメントへとご案内します。<br />
       さあ。皆様！一日限りのギャンブラーになって、最高の思い出を作りましょう！
-    </p>
+    </p>,
+    map: 4,
+    pos: [229, 187]
   },
   {
     icon: "/icons/1-2.JPG",
@@ -283,7 +285,9 @@ const datas = [
 `,
     modalDescription: <p>8月23日の早朝、旅館のオーナーが殺された。あなたは、代わりにこの謎に包まれた事件を解くことに…<br />
       この事件のトリックを解いて犯人を当てろ！真実の扉を開けるのは君だ！
-    </p>
+    </p>,
+    map: 4,
+    pos: [229, 143]
   },
   {
     icon: "/icons/1-3.JPG",
@@ -294,7 +298,9 @@ const datas = [
     ],
     title: "値。〜君とカップの距離 カップの軌跡〜",
     organization: "",
-    description: ""
+    description: "",
+    map: 4,
+    pos: [229, 99]
   },
   {
     icon: "/icons/1-4.JPG",
@@ -318,7 +324,10 @@ const datas = [
       運と知略が交わるゲームの数々が、あなたを待っています。<br />
       ディーラーを務めるのは、なんと男の子メイドたち!?<br />
       キュート全開の笑顔で、あなたを夢のひとときへご案内します。<br />
-      勝っても負けても景品プレゼント!ここだけの特別な体験をぜひお楽しみください。</p>
+      勝っても負けても景品プレゼント!ここだけの特別な体験をぜひお楽しみください。
+    </p>,
+    map: 4,
+    pos: [229, 54]
   },
   {
     icon: "/icons/1-5.JPG",
@@ -329,7 +338,9 @@ const datas = [
     ],
     title: "Sweets lawless area 〜バグを狙撃せよ〜",
     organization: "",
-    description: ""
+    description: "",
+    map: 4,
+    pos: [110, 54]
   },
   {
     icon: "/icons/1-6.JPG",
@@ -345,7 +356,9 @@ const datas = [
 `,
     modalDescription: <p>廃墟となっていた学校に肝試しに行った主人公一行<br />
       そこで現れたのは子供の幽霊ポモであった！ポモは生前、両親に遊んで貰えなかった。その代わりに主人公達にいたずらをしてくる。そのいたずらに耐えて、ポモを満足させ御札を使い成仏させよう！
-    </p>
+    </p>,
+    map: 4,
+    pos: [67, 54]
   },
   {
     icon: "/icons/1-7.JPG",
@@ -356,7 +369,9 @@ const datas = [
     ],
     title: "タカヤシキ",
     organization: "",
-    description: `高谷財閥前当主が突然行方不明になってしまった...そこで行方不明になった父を探すため、息子である現高屋財閥当主は多額の懸賞金をかけた。その懸賞金目当てに多くのチャレンジャーが集まるがみな行方不明となってしまう。いつしか現当主もその屋敷を離れ屋敷は廃墟となってしまう。奇妙な屋敷通称「タカヤシキ」を探索し、無事に高谷先生を見つけ出すことはできるのか…`
+    description: `高谷財閥前当主が突然行方不明になってしまった...そこで行方不明になった父を探すため、息子である現高屋財閥当主は多額の懸賞金をかけた。その懸賞金目当てに多くのチャレンジャーが集まるがみな行方不明となってしまう。いつしか現当主もその屋敷を離れ屋敷は廃墟となってしまう。奇妙な屋敷通称「タカヤシキ」を探索し、無事に高谷先生を見つけ出すことはできるのか…`,
+    map: 4,
+    pos: [25, 54]
   },
   {
     icon: "/icons/2-1.JPG",
@@ -367,7 +382,9 @@ const datas = [
     ],
     title: "トロッコアドベンチャー",
     organization: "",
-    description: `トロッコアドベンチャーへようこそ！2年1組では、トロッコにのって擬似的にネプリーグのような世界観を味わいながら2択クイズを解いていく臨場感のある体験を味わうことができます！身近なジャンルからマニアックなジャンルまでありとあらゆるクイズがピックアップ！果たして、全問正解するのは誰だ！？`
+    description: `トロッコアドベンチャーへようこそ！2年1組では、トロッコにのって擬似的にネプリーグのような世界観を味わいながら2択クイズを解いていく臨場感のある体験を味わうことができます！身近なジャンルからマニアックなジャンルまでありとあらゆるクイズがピックアップ！果たして、全問正解するのは誰だ！？`,
+    map: 3,
+    pos: [229, 187]
   },
   {
     icon: "/icons/2-2.JPG",
@@ -378,7 +395,9 @@ const datas = [
     ],
     title: "YOKO's is corsed roum 〜ようこの呪いの部屋〜",
     organization: "",
-    description: ""
+    description: "",
+    map: 3,
+    pos: [229, 143]
   },
   {
     icon: "/icons/2-3.JPG",
@@ -389,7 +408,9 @@ const datas = [
     ],
     title: "YOSHIKI BROS.",
     organization: "",
-    description: ""
+    description: "",
+    map: 3,
+    pos: [229, 99]
   },
   {
     icon: "/icons/2-4.JPG",
@@ -411,7 +432,9 @@ const datas = [
       あなたのためだけに夜空が明るく照らされます。幻想的な空間であなたも主人公になりませんか？<br />
       2年4組のトロッコアトラクション"Tangled"<br />
       ぜひお越しください。
-    </p>
+    </p>,
+    map: 3,
+    pos: [229, 54]
   },
   {
     icon: "/icons/2-5.JPG",
@@ -439,7 +462,9 @@ const datas = [
       <br />
       2年5組 クラス企画<br />
       お化け屋敷 “呪詛廻り”
-    </p>
+    </p>,
+    map: 3,
+    pos: [110, 54]
   },
   {
     icon: "/icons/2-6.JPG",
@@ -450,7 +475,9 @@ const datas = [
     ],
     title: "リアルでマイクラ！？ 〜梅苑祭の夜を生き抜け！〜",
     organization: "",
-    description: `ここはあの映画化した大人気ゲーム｢マインクラフト｣の世界！！マイクラの世界にいきなり放り出されたプレイヤーになりきって村人たちと交易したり、マイクラならではのクラフトをしたりして、目指すはボス（敵MOB）のところへ！！無事ボスを倒して現実の世界に戻ることは出来るのか！？`
+    description: `ここはあの映画化した大人気ゲーム｢マインクラフト｣の世界！！マイクラの世界にいきなり放り出されたプレイヤーになりきって村人たちと交易したり、マイクラならではのクラフトをしたりして、目指すはボス（敵MOB）のところへ！！無事ボスを倒して現実の世界に戻ることは出来るのか！？`,
+    map: 3,
+    pos: [67, 54]
   },
   {
     icon: "/icons/2-7.JPG",
@@ -470,7 +497,9 @@ const datas = [
       動くカートに乗りながら3つのミニゲームに挑戦しましょう！<br />
       かわいいミニオン達に囲まれる楽しい一時をお過ごしください🍌<br />
       皆様のご来場をお待ちしております。
-    </p>
+    </p>,
+    map: 3,
+    pos: [25, 54]
   },
   {
     icon: "/icons/3-1.JPG",
@@ -482,7 +511,9 @@ const datas = [
     title: "山猫軒 〜注文だらけの晩餐会〜",
     organization: "",
     description: ``,
-    timeDescription: <img src='3-1table.jpg' />
+    timeDescription: <img src='3-1table.jpg' />,
+    map: 2,
+    pos: [229, 187]
   },
   {
     icon: "/icons/3-2.JPG",
@@ -497,7 +528,7 @@ const datas = [
 
 STARWARS episode3-2 〜月の使者と金髪の悪魔〜
 
-※この劇では光の点滅や大きな音などの演出がございます。
+※この劇では光の点滅や大きな音などの演出がございます。   
 `,
     modalDescription: <p>―3-2が贈る、衝撃のクロスオーバー…！<br />
 
@@ -505,7 +536,9 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
 
       ※この劇では光の点滅や大きな音などの演出がございます。
     </p>,
-    timeDescription: <img src='3-2table.jpg' />
+    timeDescription: <img src='3-2table.jpg' />,
+    map: 2,
+    pos: [229, 143]
   },
   {
     icon: "/icons/3-3.JPG",
@@ -517,7 +550,9 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     title: "伝説の剣、抜けました。",
     organization: "",
     description: "",
-    timeDescription: <img src='3-3table.jpg' />
+    timeDescription: <img src='3-3table.jpg' />,
+    map: 2,
+    pos: [229, 99]
   },
   {
     icon: "/icons/3-4.JPG",
@@ -542,7 +577,9 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
       <br />
       ロボットを駆使し戦う高校生を描いた完全オリジナルストーリー！是非ご覧下さい
     </p>,
-    timeDescription: <img src='3-4table.jpg' />
+    timeDescription: <img src='3-4table.jpg' />,
+    map: 2,
+    pos: [229, 54]
   },
   {
     icon: "/icons/3-5.JPG",
@@ -554,7 +591,9 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     title: "カイジ 〜運命の一手〜",
     organization: "",
     description: "",
-    timeDescription: <img src='3-5table.jpg' />
+    timeDescription: <img src='3-5table.jpg' />,
+    map: 2,
+    pos: [110, 54]
   },
   {
     icon: "/icons/3-6.JPG",
@@ -566,7 +605,9 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     title: "アラジン",
     organization: "",
     description: "",
-    timeDescription: <img src='3-6table.jpg' />
+    timeDescription: <img src='3-6table.jpg' />,
+    map: 2,
+    pos: [67, 54]
   },
   {
     icon: "/icons/3-7.JPG",
@@ -577,7 +618,9 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     ],
     title: "昔話法廷",
     organization: "",
-    description: ``
+    description: ``,
+    map: 2,
+    pos: [25, 54]
   },
 
 ]

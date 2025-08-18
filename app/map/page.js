@@ -3,6 +3,8 @@
 import React, { useState } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 import { Button } from "flowbite-react"
+import datas from "../projects/_data"
+import Image from "next/image"
 
 const floors34 = [
   { value: 1, label: "1階" },
@@ -52,9 +54,15 @@ function ZoomableMap({ aspect, imgSrc }) {
             contentStyle={{ width: "fit-content", height: "fit-content" }}
           >
             <div className="relative inline-block">
-              <img src={imgSrc} alt="illustration" className="block" />
+              <img src={`/maps/${imgSrc}.png`} alt="illustration" className="block" />
               <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
-                <div className="h-[20px] w-[20px] bg-sky-400 absolute top-[20px] bottom[20px] rounded-full" onClick={() => console.log('aheahe')} />
+                {datas.map((data, i) => {
+                  if (data.map == imgSrc) {
+                    return (
+                      <Image alt='' height={33} width={33} src={data.icon} key={i} className={`h-[33px] w-[33px] absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0]}px`, left: `${data.pos[1]}px`, pointerEvents: "all" }} onClick={() => console.log(data)} />
+                    )
+                  }
+                })}
               </div>
             </div>
           </TransformComponent>
@@ -77,23 +85,23 @@ export default function Map() {
           <p className="text-xl font-semibold">3,4棟</p>
           <FloorSelector setSelected={setSelected34} selected={selected34} floors={floors34} />
         </div>
-        <ZoomableMap aspect={'1'} imgSrc={`/maps/${selected34}.png`} />
+        <ZoomableMap aspect={'1'} imgSrc={selected34} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
           <p className="text-xl font-semibold">1,2棟</p>
           <FloorSelector setSelected={setSelected12} selected={selected12} floors={floors12} />
         </div>
-        <ZoomableMap aspect={'1.16'} imgSrc={`/maps/${selected12 + 4}.png`} />
+        <ZoomableMap aspect={'1.16'} imgSrc={selected12 + 4} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
           <p className="text-xl font-semibold">1体</p>
         </div>
-        <ZoomableMap aspect={'1.38'} imgSrc={`/maps/8.png`} />
+        <ZoomableMap aspect={'1.38'} imgSrc={`8`} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
           <p className="text-xl font-semibold">2体</p>
         </div>
-        <ZoomableMap aspect={'1.2'} imgSrc={`/maps/9.png`} />
+        <ZoomableMap aspect={'1.2'} imgSrc={`9`} />
 
       </div>
     </div>
