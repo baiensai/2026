@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef, useState } from "react"
+import React, { useState } from "react"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
 import { Button } from "flowbite-react"
 
@@ -68,19 +68,8 @@ function FloorSelector12({ onSelect, setSelected12, selected12 }) {
 }
 
 export default function Map() {
-  const containerRef = useRef(null);
-
   const [selected34, setSelected34] = useState(1)
   const [selected12, setSelected12] = useState(1)
-
-  const handleClick = (e) => {
-    // 親コンテナの左上を基準にした座標を取得
-    const rect = containerRef.current.getBoundingClientRect()
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
-
-    console.log(`クリック位置: x=${x}, y=${y}`)
-  }
 
   return (
     <div className="flex justify-center">
@@ -100,12 +89,11 @@ export default function Map() {
                 wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
                 contentStyle={{ width: "fit-content", height: "fit-content" }}
               >
-                <div className="relative inline-block" ref={containerRef}>
+                <div className="relative inline-block">
                   <img src={`/maps/${selected34}.png`} alt="illustration" className="block" />
-                  <div
-                    className="absolute top-0 left-0 w-full h-full cursor-pointer"
-                    onClick={handleClick}
-                  />
+                  <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
+                    <div className="h-[20px] w-[20px] bg-sky-400 absolute top-[20px] bottom[20px] rounded-full" onClick={() => console.log('aheahe')} />
+                  </div>
                 </div>
               </TransformComponent>
             )}
@@ -125,11 +113,10 @@ export default function Map() {
                 wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
                 contentStyle={{ width: "fit-content", height: "fit-content" }}
               >
-                <div className="relative inline-block" ref={containerRef}>
+                <div className="relative inline-block">
                   <img src={`/maps/${selected12 + 4}.png`} alt="illustration" className="block" />
                   <div
                     className="absolute top-0 left-0 w-full h-full cursor-pointer"
-                    onClick={handleClick}
                   />
                 </div>
               </TransformComponent>
@@ -149,11 +136,10 @@ export default function Map() {
                 wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
                 contentStyle={{ width: "fit-content", height: "fit-content" }}
               >
-                <div className="relative inline-block" ref={containerRef}>
+                <div className="relative inline-block">
                   <img src={`/maps/8.png`} alt="illustration" className="block" />
                   <div
                     className="absolute top-0 left-0 w-full h-full cursor-pointer"
-                    onClick={handleClick}
                   />
                 </div>
               </TransformComponent>
@@ -173,11 +159,10 @@ export default function Map() {
                 wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
                 contentStyle={{ width: "fit-content", height: "fit-content" }}
               >
-                <div className="relative inline-block" ref={containerRef}>
+                <div className="relative inline-block">
                   <img src={`/maps/9.png`} alt="illustration" className="block" />
                   <div
                     className="absolute top-0 left-0 w-full h-full cursor-pointer"
-                    onClick={handleClick}
                   />
                 </div>
               </TransformComponent>
