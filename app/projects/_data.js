@@ -33,7 +33,7 @@ const datas = [
     description: "書道部員が3m×5mもの大きな紙の上で書のパフォーマンスを披露します!"
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/4.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "管弦楽" },
@@ -41,10 +41,11 @@ const datas = [
     ],
     title: "梅響",
     organization: "梅響",
-    description: ""
+    description: "",
+    modalDescription: <img src="IMG_5684.jpg" />
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/5.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "吹奏楽" },
@@ -52,10 +53,10 @@ const datas = [
     ],
     title: "有志吹奏楽団",
     organization: "",
-    description: ""
+    description: "私たち有志吹奏楽団は、部活動の壁を越えて吹奏楽を愛する人が集まった楽団です！メンバー全員が集まれるタイミングが少なく、練習時間の確保が難しい中での本番にはなりますが、皆さまの心に残る演奏をいたします！是非お越しください！"
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/6.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "漫才" },
@@ -63,7 +64,7 @@ const datas = [
     ],
     title: "オテンキボックス",
     organization: "",
-    description: ""
+    description: "漫才をします"
   },
   {
     icon: "/icons/99.png",
@@ -77,7 +78,7 @@ const datas = [
     description: ""
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/8.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "ピアノ連弾" },
@@ -88,7 +89,7 @@ const datas = [
     description: ""
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/9.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "有志" },
@@ -143,7 +144,7 @@ const datas = [
     description: ""
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/14.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "バンド" },
@@ -151,10 +152,17 @@ const datas = [
     ],
     title: "Lemo/nade",
     organization: "",
-    description: ""
+    description: "幼馴染でも、ガールズバンドでも、4人組でもありません。なんならメンバーの半分はプロセカ未履修です。そんなバンド、Lemo/nade🍋です。ボカロが好きな方は是非足をお運びください！",
+    modalDescription: <>
+      <p>
+        幼馴染でも、ガールズバンドでも、4人組でもありません。なんならメンバーの半分はプロセカ未履修です。そんなバンド、Lemo/nade🍋です。<br />
+        ボカロが好きな方は是非足をお運びください！
+      </p>
+      <img src="Lemo_nade 宣伝画像.JPG" />
+    </>
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/15.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "ジャズ演奏" },
@@ -162,10 +170,10 @@ const datas = [
     ],
     title: "ジャズ研究部",
     organization: "ジャズ研究部",
-    description: ""
+    description: "一度は聞いたことがあるあの曲たちをジャズ研究部がお届けします！ぜひご覧ください。"
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/16.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "バンド" },
@@ -173,7 +181,7 @@ const datas = [
     ],
     title: "やりますバンド",
     organization: "",
-    description: ""
+    description: "バンドやります"
   },
   {
     icon: "/icons/17.png",
@@ -188,7 +196,7 @@ const datas = [
     timeDescription: ""
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/18.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "バンド" },
@@ -196,7 +204,7 @@ const datas = [
     ],
     title: "鉄血宰相(仮)",
     organization: "",
-    description: ""
+    description: "鉄血宰相(仮)です！メタルバンドではありません！"
   },
   {
     icon: "/icons/99.png",
@@ -221,7 +229,7 @@ const datas = [
     description: ""
   },
   {
-    icon: "/icons/99.png",
+    icon: "/icons/21.png",
     place: "1体ステージ",
     tags: [
       { color: "blue", text: "歌唱" },
@@ -229,7 +237,7 @@ const datas = [
     ],
     title: "遠藤由深歌います♪",
     organization: "",
-    description: ""
+    description: "優里さんのドライフラワーや平井堅さんのノンフィクションを歌います！梅苑祭2日目の8月24日第1体育館13:35から始まります！ぜひお越しください！"
   },
   {
     icon: "/icons/22.png",
@@ -473,7 +481,8 @@ const datas = [
     ],
     title: "山猫軒 〜注文だらけの晩餐会〜",
     organization: "",
-    description: ``
+    description: ``,
+    timeDescription: <img src='3-1table.jpg' />
   },
   {
     icon: "/icons/3-2.JPG",
@@ -495,7 +504,8 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
       STARWARS episode3-2 〜月の使者と金髪の悪魔〜<br />
 
       ※この劇では光の点滅や大きな音などの演出がございます。
-    </p>
+    </p>,
+    timeDescription: <img src='3-2table.jpg' />
   },
   {
     icon: "/icons/3-3.JPG",
@@ -506,7 +516,8 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     ],
     title: "伝説の剣、抜けました。",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: <img src='3-3table.jpg' />
   },
   {
     icon: "/icons/3-4.JPG",
@@ -518,12 +529,18 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     title: "出撃 H.O.P.E.",
     organization: "",
     description: `3-4ロボット劇『出撃 H.O.P.E.』
-少年少女がロボットを駆使し平和を脅かす敵に立ち向かっていくSFアクション！！
-完全オリジナルの脚本をお楽しみください
+平和な世界で平凡な日常を送る高校生、ユーリ。そんな彼の元に現れたのは、自らを未来から来たと言うAI、エインヘリアルだった。
+「あなたには世界を変えてもらわなければなりません。」
+そう告げるエインヘリアルに戸惑う主人公だったが、為す術もなく巻き込まれ連れていかれた先には、一機の巨大なロボットがあった……
+
+ロボットを駆使し戦う高校生を描いた完全オリジナルストーリー！是非ご覧下さい
 `,
     modalDescription: <p>3-4ロボット劇『出撃 H.O.P.E.』<br />
-      少年少女がロボットを駆使し平和を脅かす敵に立ち向かっていくSFアクション！！<br />
-      完全オリジナルの脚本をお楽しみください
+      平和な世界で平凡な日常を送る高校生、ユーリ。そんな彼の元に現れたのは、自らを未来から来たと言うAI、エインヘリアルだった。<br />
+      「あなたには世界を変えてもらわなければなりません。」<br />
+      そう告げるエインヘリアルに戸惑う主人公だったが、為す術もなく巻き込まれ連れていかれた先には、一機の巨大なロボットがあった……<br />
+      <br />
+      ロボットを駆使し戦う高校生を描いた完全オリジナルストーリー！是非ご覧下さい
     </p>,
     timeDescription: <img src='3-4table.jpg' />
   },
@@ -536,7 +553,8 @@ STARWARS episode3-2 〜月の使者と金髪の悪魔〜
     ],
     title: "カイジ 〜運命の一手〜",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: <img src='3-5table.jpg' />
   },
   {
     icon: "/icons/3-6.JPG",
