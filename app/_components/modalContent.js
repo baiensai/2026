@@ -42,49 +42,57 @@ function ModalContent({ data }) {
         </div>
       </div>
 
-      <div className="mt-2 flex items-start">
-        <GoDotFill className="text-pink-600 mt-[7px]" />
-        <div>
-          <p className="text-lg font-medium">説明</p>
-        </div>
-      </div>
-      <div className="text-base md:text-base w-full">{data.modalDescription ?? data.description}</div>
-
-      <div className="mt-2 flex items-start">
-        <GoDotFill className="text-pink-600 mt-[7px]" />
-        <div>
-          <p className="text-lg font-medium">時間</p>
-        </div>
-      </div>
-      <div className="text-base md:text-base w-full">{data.timeDescription ?? null}</div>
-
-      {data.map ?
-        <>
-          <div className="mt-2 flex items-start">
-            <GoDotFill className="text-pink-600 mt-[7px]" />
-            <div>
-              <p className="text-lg font-medium mb-2">場所</p>
-              <p className="">{data.place}</p>
-            </div>
+      {(data.modalDescription ?? data.description) ? <>
+        <div className="mt-2 flex items-start">
+          <GoDotFill className="text-pink-600 mt-[7px]" />
+          <div>
+            <p className="text-lg font-medium">説明</p>
           </div>
-          <div className={`w-full aspect-[${data.map < 5 ? 1 : 1.16}]`}>
-            <TransformWrapper wheel={{ step: 0.1 }} pinch={{ step: 5 }} doubleClick={{ disabled: true }}>
-              {({ state }) => (
-                <TransformComponent
-                  wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
-                  contentStyle={{ width: "fit-content", height: "fit-content" }}
-                >
-                  <div className="relative inline-block">
-                    <img src={`/maps/${data.map}.png`} alt="illustration" className="block" />
-                    <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
-                      <Image alt='' height={33} width={33} src={data.icon} className={`absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0] / 337 * 100}%`, left: `${data.pos[1] / 337 / (data.map < 5 ? 1 : 1.16) * 100}%`, pointerEvents: "all", width: `${33 / 337 * 100}%`, height: `${33 / 337 * 100}%` }} />
-                    </div>
+        </div>
+        <div className="text-base md:text-base w-full">{data.modalDescription ?? data.description}</div>
+      </>
+        : null
+      }
+
+      {data.timeDescription ? <>
+        <div className="mt-2 flex items-start">
+          <GoDotFill className="text-pink-600 mt-[7px]" />
+          <div>
+            <p className="text-lg font-medium">時間</p>
+          </div>
+        </div>
+        <div className="text-base md:text-base w-full">{data.timeDescription ?? null}</div>
+
+      </>
+        : null
+      }
+
+      {data.map ? <>
+        <div className="mt-2 flex items-start">
+          <GoDotFill className="text-pink-600 mt-[7px]" />
+          <div>
+            <p className="text-lg font-medium mb-2">場所</p>
+            <p className="">{data.place}</p>
+          </div>
+        </div>
+        <div className={`w-full aspect-[${data.map < 5 ? 1 : 1.16}]`}>
+          <TransformWrapper wheel={{ step: 0.1 }} pinch={{ step: 5 }} doubleClick={{ disabled: true }}>
+            {({ state }) => (
+              <TransformComponent
+                wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
+                contentStyle={{ width: "fit-content", height: "fit-content" }}
+              >
+                <div className="relative inline-block">
+                  <img src={`/maps/${data.map}.png`} alt="illustration" className="block" />
+                  <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
+                    <Image alt='' height={33} width={33} src={data.icon} className={`absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0] / 337 * 100}%`, left: `${data.pos[1] / 337 / (data.map < 5 ? 1 : 1.16) * 100}%`, pointerEvents: "all", width: `${33 / 337 * 100}%`, height: `${33 / 337 * 100}%` }} />
                   </div>
-                </TransformComponent>
-              )}
-            </TransformWrapper>
-          </div>
-        </>
+                </div>
+              </TransformComponent>
+            )}
+          </TransformWrapper>
+        </div>
+      </>
         : null
       }
 
