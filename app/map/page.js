@@ -97,6 +97,8 @@ export default function Map() {
       <div className="px-4 sm:px-10 mx-2 md:mx-auto max-w-[700px]">
         <p className="text-3xl font-semibold text-center mt-6 mb-6">校内マップ</p>
 
+        <Image alt='' width={1667} height={1049} src='/maps/0.jpg' className="rounded-xl mb-8" />
+
         <div className="flex justify-between items-center mb-4">
           <p className="text-xl font-semibold">3,4棟</p>
           <FloorSelector setSelected={setSelected34} selected={selected34} floors={floors34} />

@@ -92,6 +92,7 @@ function ModalContent({ data }) {
             )}
           </TransformWrapper>
         </div>
+        <Image alt='' width={1667} height={1049} src='/maps/0.jpg' className="rounded-xl mb-0" />
       </>
         : null
       }
