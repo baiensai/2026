@@ -8,7 +8,8 @@ const datas = [
     ],
     title: "オカズの残り物 presents ミームダンスパフォーマンス -This is world meme dance-",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "10:00 - 10:10",
   },
   {
     icon: "/icons/99.png",
@@ -19,7 +20,8 @@ const datas = [
     ],
     title: "福島高校クイズ研究会",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "10:30 - 11:30",
   },
   {
     icon: "/icons/3.png",
@@ -30,7 +32,8 @@ const datas = [
     ],
     title: "書道部",
     organization: "書道部",
-    description: "書道部員が3m×5mもの大きな紙の上で書のパフォーマンスを披露します!"
+    description: "書道部員が3m×5mもの大きな紙の上で書のパフォーマンスを披露します!",
+    timeDescription: "11:30 - 11:45",
   },
   {
     icon: "/icons/4.png",
@@ -42,7 +45,8 @@ const datas = [
     title: "梅響",
     organization: "梅響",
     description: "",
-    modalDescription: <img src="IMG_5684.jpg" />
+    modalDescription: <img src="IMG_5684.jpg" />,
+    timeDescription: "11:50 - 12:20",
   },
   {
     icon: "/icons/5.png",
@@ -53,7 +57,8 @@ const datas = [
     ],
     title: "有志吹奏楽団",
     organization: "",
-    description: "私たち有志吹奏楽団は、部活動の壁を越えて吹奏楽を愛する人が集まった楽団です！メンバー全員が集まれるタイミングが少なく、練習時間の確保が難しい中での本番にはなりますが、皆さまの心に残る演奏をいたします！是非お越しください！"
+    description: "私たち有志吹奏楽団は、部活動の壁を越えて吹奏楽を愛する人が集まった楽団です！メンバー全員が集まれるタイミングが少なく、練習時間の確保が難しい中での本番にはなりますが、皆さまの心に残る演奏をいたします！是非お越しください！",
+    timeDescription: "12:30 - 13:00",
   },
   {
     icon: "/icons/6.png",
@@ -64,7 +69,8 @@ const datas = [
     ],
     title: "オテンキボックス",
     organization: "",
-    description: "漫才をします"
+    description: "漫才をします",
+    timeDescription: "13:15 - 13:20",
   },
   {
     icon: "/icons/99.png",
@@ -75,7 +81,8 @@ const datas = [
     ],
     title: "ヨーヨー人from雑すぎる雑技団",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "13:20 - 13:30",
   },
   {
     icon: "/icons/8.png",
@@ -86,7 +93,8 @@ const datas = [
     ],
     title: "Shero",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "13:35 - 13:50",
   },
   {
     icon: "/icons/9.png",
@@ -96,7 +104,8 @@ const datas = [
     ],
     title: "福島高校チアリーダー部",
     organization: "福島高校チアリーダー部",
-    description: ""
+    description: "",
+    timeDescription: "13:55 - 14:15",
   },
   {
     icon: "/icons/99.png",
@@ -107,7 +116,8 @@ const datas = [
     ],
     title: "ceon.",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "14:15 - 14:45",
   },
   {
     icon: "/icons/99.png",
@@ -118,7 +128,8 @@ const datas = [
     ],
     title: "ripe girls",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "14:55 - 15:15",
   },
   {
     icon: "/icons/12.png",
@@ -130,7 +141,8 @@ const datas = [
     ],
     title: "All for D",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "15:15 - 15:25",
   },
   {
     icon: "/icons/99.png",
@@ -141,7 +153,8 @@ const datas = [
     ],
     title: "田中",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "9:30 - 9:55",
   },
   {
     icon: "/icons/14.png",
@@ -159,7 +172,8 @@ const datas = [
         ボカロが好きな方は是非足をお運びください！
       </p>
       <img src="Lemo_nade 宣伝画像.JPG" />
-    </>
+    </>,
+    timeDescription: "9:55 - 10:10",
   },
   {
     icon: "/icons/15.png",
@@ -170,7 +184,8 @@ const datas = [
     ],
     title: "ジャズ研究部",
     organization: "ジャズ研究部",
-    description: "一度は聞いたことがあるあの曲たちをジャズ研究部がお届けします！ぜひご覧ください。"
+    description: "一度は聞いたことがあるあの曲たちをジャズ研究部がお届けします！ぜひご覧ください。",
+    timeDescription: "10:20 - 10:45",
   },
   {
     icon: "/icons/16.png",
@@ -181,7 +196,8 @@ const datas = [
     ],
     title: "やりますバンド",
     organization: "",
-    description: "バンドやります"
+    description: "バンドやります",
+    timeDescription: "10:55 - 11:20",
   },
   {
     icon: "/icons/17.png",
@@ -193,7 +209,7 @@ const datas = [
     organization: "",
     description: "",
     modalDescription: <img src="/IMG_5627.jpg" />,
-    timeDescription: ""
+    timeDescription: "11:30 - 11:55"
   },
   {
     icon: "/icons/18.png",
@@ -204,7 +220,8 @@ const datas = [
     ],
     title: "鉄血宰相(仮)",
     organization: "",
-    description: "鉄血宰相(仮)です！メタルバンドではありません！"
+    description: "鉄血宰相(仮)です！メタルバンドではありません！",
+    timeDescription: "12:05 - 12:30",
   },
   {
     icon: "/icons/99.png",
@@ -215,7 +232,8 @@ const datas = [
     ],
     title: "Take Four",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "12:40 - 13:00",
   },
   {
     icon: "/icons/99.png",
@@ -226,7 +244,8 @@ const datas = [
     ],
     title: "じゅりっこ",
     organization: "",
-    description: ""
+    description: "",
+    timeDescription: "13:10 - 13:30",
   },
   {
     icon: "/icons/21.png",
@@ -237,7 +256,8 @@ const datas = [
     ],
     title: "遠藤由深歌います♪",
     organization: "",
-    description: "優里さんのドライフラワーや平井堅さんのノンフィクションを歌います！梅苑祭2日目の8月24日第1体育館13:35から始まります！ぜひお越しください！"
+    description: "優里さんのドライフラワーや平井堅さんのノンフィクションを歌います！梅苑祭2日目の8月24日第1体育館13:35から始まります！ぜひお越しください！",
+    timeDescription: "13:35 - 14:00",
   },
   {
     icon: "/icons/22.png",
@@ -247,7 +267,8 @@ const datas = [
     ],
     title: "図書委員会",
     organization: "図書委員会",
-    description: "「バトラーおすすめの本をご本人に熱く語って頂き、一番読みたくなった本No. 1を決めることが主な内容となっております。観客の方には最後、チャンプ本にしたい本を選んで頂きます！本好きも、そうでない人も、疲れずゆったりと楽しめるものとなっておりますので、ぜひご参加ください！」"
+    description: "「バトラーおすすめの本をご本人に熱く語って頂き、一番読みたくなった本No. 1を決めることが主な内容となっております。観客の方には最後、チャンプ本にしたい本を選んで頂きます！本好きも、そうでない人も、疲れずゆったりと楽しめるものとなっておりますので、ぜひご参加ください！」",
+    timeDescription: "14:00 - 14:30",
   },
   {
     icon: "/icons/99.png",
@@ -828,4 +849,5 @@ Do you trust me？
 
 
 export default datas
+
 
