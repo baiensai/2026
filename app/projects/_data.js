@@ -828,6 +828,7 @@ Do you trust me？
     ],
     title: "昔話法廷",
     organization: "",
+    timeDescription: <img src='3-7table.jpg' />,
     description: `NHK for schoolで人気のシリーズを題材に演劇を作成しました！！
 
 あのお話のあの人物、「法律」の視点で見てみると意外なキャラクターが見えてくるかも！？あの行動に裁きを下すのはあなたかもしれません！
@@ -849,5 +850,6 @@ Do you trust me？
 
 
 export default datas
+
 
 
