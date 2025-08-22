@@ -250,6 +250,96 @@ const datas = [
     description: "「バトラーおすすめの本をご本人に熱く語って頂き、一番読みたくなった本No. 1を決めることが主な内容となっております。観客の方には最後、チャンプ本にしたい本を選んで頂きます！本好きも、そうでない人も、疲れずゆったりと楽しめるものとなっておりますので、ぜひご参加ください！」"
   },
   {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "将棋部員との対局体験(両日11時〜14時まで)",
+    organization: "将棋部",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "書道部員が皆さんの好きな文字をうちわにお書きします!※1日目100枚限定",
+    organization: "書道部",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "美術部 作品展示",
+    organization: "美術部",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "大会入賞作品、学校行事の写真展示",
+    organization: "写真部",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "梅章委員会 活動内容報告",
+    organization: "梅章委員会",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "保健委員会による、健康に関する様々なテーマのポスターの展示",
+    organization: "保健委員会",
+  },
+    {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "福高生及び福高OB.OGによる「夏」をテーマにした楽曲の展示",
+    organization: "福島高校電子音楽研究会",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "令和7年度梅苑祭テーマイラスト候補作品の展示",
+    organization: "",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "2体",
+    tags: [
+      { color: "blue", text: "展示" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "福高生による大喜利の展示、投票",
+    organization: "",
+  },
+  {
     icon: "/icons/1-1.JPG",
     place: "3棟4階 1-1教室",
     tags: [
@@ -738,3 +828,4 @@ Do you trust me？
 
 
 export default datas
+
