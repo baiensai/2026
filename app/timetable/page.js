@@ -10,29 +10,32 @@ const BASE = 4 // 4px per 1min
 
 const TimeTableData = {
   date1: [
-    { start: "10:00", length: 10, title: "オカズの残り物 presents ミームダンスパフォーマンス -This is world meme dance-", discription: "ダンス", subTitle: null, color: "pink" },
-    { start: "10:30", length: 60, title: "福島高校クイズ研究会", discription: "クイズバトル", subTitle: null, color: "pink" },
-    { start: "11:30", length: 15, title: "書道部", discription: "パフォーマンス,体育館後方", subTitle: null, color: "pink" },
-    { start: "11:50", length: 30, title: "梅響", discription: "管弦楽", subTitle: null, color: "orange" },
-    { start: "12:30", length: 30, title: "有志吹奏楽団", discription: "吹奏楽", subTitle: null, color: "orange" },
-    { start: "13:15", length: 5, title: "オテンキボックス", discription: "漫才", subTitle: null, color: "pink" },
-    { start: "13:20", length: 10, title: "ヨーヨー人from雑すぎる雑技団", discription: "パフォーマンス", subTitle: null, color: "pink" },
-    { start: "13:35", length: 15, title: "Shero", discription: "ピアノ連弾", subTitle: null, color: "orange" },
-    { start: "13:55", length: 20, title: "福島高校チアリーダー部", discription: null, subTitle: null, color: "pink" },
-    { start: "14:15", length: 30, title: "ceon.", discription: "ダンス", subTitle: null, color: "pink" },
-    { start: "14:55", length: 20, title: "ripe girls", discription: "ダンス", subTitle: null, color: "pink" },
-    { start: "15:15", length: 10, title: "ALL for D", discription: "ダンス&DJ", subTitle: null, color: "pink" }],
+    { start: "10:00", length: 5, title: "with piano", discription: "バンド", subTitle: null, color: "orange" },
+    { start: "10:15", length: 15, title: "過疎中", discription: "バンド", subTitle: null, color: "orange" },
+    { start: "10:40", length: 25, title: "梅高軽音同好会", discription: "バンド", subTitle: null, color: "orange" },
+    { start: "11:15", length: 25, title: "バタークッキー", discription: "バンド", subTitle: null, color: "orange" },
+    { start: "11:50", length: 15, title: "会長と愉快な仲間たち", discription: "バンド", subTitle: null, color: "orange" },
+    { start: "12:05", length: 10, title: "書道部", discription: "パフォーマンス, 体育館後方", subTitle: null, color: "pink" },
+    { start: "12:35", length: 30, title: "梅響", discription: "管弦楽演奏", subTitle: null, color: "orange" },
+    { start: "13:15", length: 25, title: "2026 有志吹奏楽団", discription: "吹奏楽演奏", subTitle: null, color: "orange" },
+    { start: "14:05", length: 30, title: "福高チアリーダー部", discription: null, subTitle: null, color: "pink" },
+    { start: "14:35", length: 30, title: "RAWKZM", discription: "ダンス", subTitle: null, color: "pink" },
+    { start: "15:05", length: 25, title: "じゅりっこ", discription: "ダンス", subTitle: null, color: "pink" },
+  ],
   date2: [
-    { start: "09:30", length: 25, title: "田中", subTitle: null, discription: "DJ", color: "orange" },
-    { start: "09:55", length: 15, title: "Lemo/nade", subTitle: null, discription: "バンド", color: "orange" },
-    { start: "10:20", length: 25, title: "ジャズ研究部", subTitle: null, discription: "ジャズ演奏", color: "orange" },
-    { start: "10:55", length: 25, title: "やりますバンド", subTitle: null, discription: "バンド", color: "orange" },
-    { start: "11:30", length: 25, title: "takogeso", subTitle: null, discription: "バンド", color: "orange" },
-    { start: "12:05", length: 25, title: "鉄血宰相(仮)", subTitle: null, discription: "バンド", color: "orange" },
-    { start: "12:40", length: 20, title: "Take Four", subTitle: null, discription: "バンド", color: "orange" },
-    { start: "13:10", length: 20, title: "じゅりっこ", subTitle: null, discription: "ダンス", color: "pink" },
-    { start: "13:35", length: 25, title: "遠藤由深歌います♪", subTitle: null, discription: "歌唱", color: "orange" },
-    { start: "14:00", length: 30, title: "図書委員会", subTitle: null, discription: "ビブリオバトル", color: "pink" }
+    {
+      start: "09:30", length: 15,
+      title: "無念晴ラスメント", subTitle: null, discription: "バンド", color: "orange"
+    },
+    { start: "09:55", length: 15, title: "GaiZies（ギャイザイズ）", subTitle: null, discription: "バンド", color: "orange" },
+    { start: "10:20", length: 25, title: "残業AED", subTitle: null, discription: "バンド", color: "orange" },
+    { start: "10:55", length: 20, title: "Jazz研究部", subTitle: null, discription: "ジャズ演奏", color: "orange" },
+    { start: "11:25", length: 25, title: "Take Five", subTitle: null, discription: "バンド", color: "orange" },
+    { start: "12:05", length: 15, title: "ROSEA", subTitle: null, discription: "ダンス", color: "pink" },
+    { start: "12:20", length: 15, title: "月人（るなんちゅ）", subTitle: null, discription: "ダンス", color: "pink" },
+    { start: "12:40", length: 10, title: "Uni Bloom", subTitle: null, discription: "パフォーマンス", color: "pink" },
+    { start: "13:00", length: 10, title: "All for D", subTitle: null, discription: "ダンス＆DJ", color: "pink" },
+    { start: "13:30", length: 60, title: "福島高校クイズ研究会", subTitle: null, discription: "クイズ", color: "pink" }
   ]
 }
 
@@ -156,7 +159,7 @@ function TimeTable() {
           </div>
 
           <div className="w-3/7 bg-white py-2">
-            <div className="text-center text-lg font-semibold">1日目 (8/23)</div>
+            <div className="text-center text-lg font-semibold">1日目 (8/22)</div>
             <div className="relative mx-2 md:mx-8" style={{ top: '11px' }}>
               {TimeTableData.date1.map((v, i) => (
                 <TimeTableItem setOpenModal={setOpenModal} start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} ind={i} />
@@ -186,7 +189,7 @@ function TimeTable() {
           </div>
 
           <div className="w-3/7 bg-white py-2 pr-1 md:pr-2">
-            <div className="text-center text-lg font-semibold">2日目 (8/24)</div>
+            <div className="text-center text-lg font-semibold">2日目 (8/23)</div>
             <div className="relative mx-2 md:mx-8" style={{ top: '11px' }}>
               {TimeTableData.date2.map((v, i) => (
                 <TimeTableItem setOpenModal={setOpenModal} start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} ind={i+12} />

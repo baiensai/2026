@@ -6,8 +6,8 @@ import { GoDotFill } from "react-icons/go"
 const news = [
   {
     title: "公式サイト開設",
-    content: "梅苑祭2025公式ウェブサイトを開設しました。最新情報や詳細を確認できます。",
-    date: "2025.08.17"
+    content: "梅苑祭2026公式ウェブサイトを開設しました。最新情報や詳細を確認できます。",
+    date: "2026.08.08"
   },
 ]
 
@@ -15,12 +15,12 @@ function Index() {
   return (
     <div className="px-2 sm:px-4 max-w-4xl mx-auto mt-10">
       <div className="mb-6 px-4">
-        <p className="text-xl font-medium mb-4">福島高校文化祭 梅苑祭2025</p>
-        <p className="text-[3.75em] font-bold"><span className="text-red-500">EX</span>CEED <span className="text-blue-500">PO</span>TENTIAL</p>
-        <p className="text-2xl">ー 可能性を超えろ</p>
-
+        <p className="text-xl font-medium mb-4">福島高校文化祭 梅苑祭2026</p>
+        <p className="text-[3.75em] font-bold">
+        <img src="sparkling.svg"></img></p>
+        {/* <p className="text-2xl">ー 可能性を超えろ</p> */}
         <div className="flex justify-center mt-4 mb-4">
-          <div className="w-60">
+          <div className="w-60"> 
             <Button color="light" pill as={Link} href="/theme"><HiOutlineArrowRight className="mr-2 h-3 w-3" />テーマについて</Button>
           </div>
         </div>
@@ -35,7 +35,7 @@ function Index() {
               <p className="text-2xl font-medium">開催日時</p>
             </div>
             <div className="pl-4 mt-4">
-              <p className="text-4xl mb-4 font-medium">2025.08.23-24</p>
+              <p className="text-4xl mb-4 font-medium">2026.08.22-23</p>
               <p className="text-2xl mb-1">1日目 11:00-15:30</p>
               <p className="text-lg ml-4 mb-4">(オープニングセレモニー 10:50~)</p>
               <p className="text-2xl mb-4">2日目 09:30-14:30</p>
@@ -95,4 +95,4 @@ function Index() {
   )
 }
 
-export default Index 
+export default Index

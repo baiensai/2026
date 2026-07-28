@@ -10,7 +10,7 @@ function Theme() {
       <Image alt="テーマイラスト" src={Illustration} className="max-w-[500px] w-full md:w-150 mx-auto rounded-xl border-gray-600 border-3 mt-2 mb-5" />
       <p className="text-gray-800 text-2xl font-semibold mb-2 mt-12">スローガンについて</p>      
       <p className="mb-2">
-        今年度の梅苑祭スローガンは「EXCEED POTENTIAL」(可能性を超えろ)。このスローガンは大阪・関西万博を連想させる「EXPO」を含み、今年度の梅苑祭が、本校生一人一人が限界にとらわれず、可能性を超えて個性や情熱を表現するいわば福高生にとっての"万博"になること期待しています。
+        今年度の梅苑祭スローガンは「Sparkling!!!」(可能性を超えろ)。このスローガンは大阪・関西万博を連想させる「EXPO」を含み、今年度の梅苑祭が、本校生一人一人が限界にとらわれず、可能性を超えて個性や情熱を表現するいわば福高生にとっての"万博"になること期待しています。
       </p>
       <p>
         ご来場の皆様にも、歴史ある梅苑祭の一端で、未来への可能性を感じるような体験や感動をお届けできましたら幸いです。

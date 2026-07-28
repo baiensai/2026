@@ -82,8 +82,8 @@ function Info() {
             <p className="text-2xl font-medium">開催日時</p>
           </div>
           <div className="pl-4 mt-4">
-            <p className="text-lg">2025/8/23(土) 11:00~15:30(10:40からオープニングセレモニー)</p>
-            <p className="text-lg">2025/8/24(日) 9:30~14:30</p>
+            <p className="text-lg">2026/8/22(土) 11:00~15:30(10:40からオープニングセレモニー)</p>
+            <p className="text-lg">2026/8/23(日) 9:30~14:30</p>
             <p className="text-base text-gray-600">入場は終了時間の30分前まで</p>
           </div>
         </div>
