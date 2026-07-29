@@ -10,9 +10,7 @@ function Projects() {
       <div className="px-2 md:px-12 max-w-[1000px] mx-auto mb-10">
         <div className="px-0">
           <ThemeProvider theme={{ accordion: AccordionTheme }} root={true}>
-            <Accordion collapseAll className="mt-2">
-              <AccordionItem question="賞について" answer="(文章錬成中....)" />
-            </Accordion>
+
           </ThemeProvider>
         </div>
 

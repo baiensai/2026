@@ -1,0 +1,127 @@
+'use client'
+
+import React, { useState } from "react"
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
+import { Button } from "flowbite-react"
+import datas from "../projects/_data"
+import ModalContent from "../_components/modalContent"
+import { IoCloseCircleOutline } from "react-icons/io5"
+import Image from "next/image"
+import { Modal, ModalBody } from "flowbite-react"
+
+const floors34 = [
+  { value: 1, label: "1階" },
+  { value: 2, label: "2階" },
+  { value: 3, label: "3階" },
+  { value: 4, label: "4階" },
+]
+
+const floors12 = [
+  { value: 1, label: "1階" },
+  { value: 2, label: "2階" },
+  { value: 3, label: "3階" },
+]
+
+function FloorSelector({ onSelect, setSelected, selected, floors }) {
+  const handleSelect = (floor) => {
+    setSelected(floor)
+    if (onSelect) onSelect(floor)
+  }
+
+  return (
+    <div className="">
+      <div className="flex gap-3">
+        {floors.map((f) => (
+          <Button
+            key={f.value}
+            color={selected === f.value ? "pink" : "light"}
+            pill
+            size="sm"
+            onClick={() => handleSelect(f.value)}
+          >
+            {f.label}
+          </Button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function ZoomableMap({ aspect, imgSrc, setOpenModal }) {
+  return (
+    <div className={`w-full aspect-[${aspect}]`}>
+      <TransformWrapper wheel={{ step: 0.1 }} pinch={{ step: 5 }} doubleClick={{ disabled: true }}>
+        {({ state }) => (
+          <TransformComponent
+            wrapperStyle={{ width: "100%", height: "100%", overflow: "hidden" }}
+            contentStyle={{ width: "fit-content", height: "fit-content" }}
+          >
+            <div className="relative inline-block">
+              <img src={`/maps/${imgSrc}.png`} alt="illustration" className="block" />
+              <div className="absolute top-0 left-0 w-full h-full cursor-pointer">
+                {datas.map((data, i) => {
+                  if (data.map == imgSrc) {
+                    return (
+                      <Image alt='' height={33} width={33} src={data.icon} key={i} className={`absolute border-pink-500 border-1 rounded-sm`} style={{ top: `${data.pos[0] / 337 * 100}%`, left: `${data.pos[1] / 337 / aspect * 100}%`, pointerEvents: "all", width: `${33 / 337 * 100}%`, height: `${33 / 337 * 100}%` }} onClick={() => setOpenModal(data)} />
+                    )
+                  }
+                })}
+              </div>
+            </div>
+          </TransformComponent>
+        )}
+      </TransformWrapper>
+    </div>
+  )
+}
+
+export default function Map() {
+  const [selected34, setSelected34] = useState(1)
+  const [selected12, setSelected12] = useState(1)
+
+    const [openModal, setOpenModal] = useState(null)
+
+  return (
+    <div className="flex justify-center">
+            <Modal dismissible show={openModal} onClose={() => setOpenModal(null)} className="[&_*]:focus-visible:outline-none">
+        <ModalBody>
+          <div className="flex flex-row-reverse">
+            <IoCloseCircleOutline className="w-7 h-7" onClick={() => setOpenModal(null)} />
+          </div>
+          <div className="">
+            <ModalContent data={openModal} />
+          </div>
+        </ModalBody>
+      </Modal>
+
+      <div className="px-4 sm:px-10 mx-2 md:mx-auto max-w-[700px]">
+        <p className="text-3xl font-semibold text-center mt-6 mb-6">校内マップ</p>
+
+        <Image alt='' width={1667} height={1049} src='/maps/0.jpg' className="rounded-xl mb-8" />
+
+        <div className="flex justify-between items-center mb-4">
+          <p className="text-xl font-semibold">3,4棟</p>
+          <FloorSelector setSelected={setSelected34} selected={selected34} floors={floors34} />
+        </div>
+        <ZoomableMap aspect={'1'} imgSrc={selected34} setOpenModal={setOpenModal} />
+
+        <div className="flex justify-between items-center mb-4 mt-12">
+          <p className="text-xl font-semibold">1,2棟</p>
+          <FloorSelector setSelected={setSelected12} selected={selected12} floors={floors12} />
+        </div>
+        <ZoomableMap aspect={'1.16'} imgSrc={selected12 + 4} setOpenModal={setOpenModal} />
+
+        <div className="flex justify-between items-center mb-4 mt-12">
+          <p className="text-xl font-semibold">1体</p>
+        </div>
+        <ZoomableMap aspect={'1.38'} imgSrc={`8`} setOpenModal={setOpenModal} />
+
+        <div className="flex justify-between items-center mb-4 mt-12">
+          <p className="text-xl font-semibold">2体</p>
+        </div>
+        <ZoomableMap aspect={'1.2'} imgSrc={`9`} setOpenModal={setOpenModal} />
+
+      </div>
+    </div>
+  )
+}

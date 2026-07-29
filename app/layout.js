@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata = {
-  title: "福島高校文化祭 梅苑祭2025 公式サイト",
-  description: "福島高校文化祭 梅苑祭2025「EXCEED POTENTIAL」の公式サイト",
+  title: "福島高校文化祭 梅苑祭2026 公式サイト",
+  description: "福島高校文化祭 梅苑祭2026「Sparkling!!!」の公式サイト",
 }
 
 export default function RootLayout({ children }) {
@@ -43,12 +43,15 @@ export default function RootLayout({ children }) {
             />
           </NavbarBrand>
           <NavbarToggle />
+          現在準備中です。本公開は8月上旬を予定しています。
+          {/*}
           <NavbarCollapse>
             <NavbarLink href="projects">企画</NavbarLink>
             <NavbarLink href="info">案内</NavbarLink>
             <NavbarLink href="timetable">スケジュール</NavbarLink>
             <NavbarLink href="map">マップ</NavbarLink>
           </NavbarCollapse>
+          */}
         </Navbar>
 
         {children}
@@ -64,7 +67,7 @@ export default function RootLayout({ children }) {
 
               <div className="flex mt-4 sm:mt-0 sm:ml-6 gap-4">
                 <a
-                  href="https://www.instagram.com/baijitsu_2025/"
+                  href="https://www.instagram.com/baijitsu__2026/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 hover:text-pink-600 text-2xl"
@@ -83,6 +86,7 @@ export default function RootLayout({ children }) {
             </div>
             <FooterDivider />
             <FooterCopyright href="https://github.com/Cosmic-rare" by="Soraki Yashiro" year={2025} />
+            <FooterCopyright href="https://github.com/fukyoworks" by="Sora Iida" year={2026} />
           </div>
         </Footer>
       </body>
