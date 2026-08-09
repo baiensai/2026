@@ -18,8 +18,8 @@ const TimeTableData = {
     { start: "12:05", length: 10, title: "書道部", discription: "パフォーマンス, 体育館後方", subTitle: null, color: "pink" },
     { start: "12:35", length: 30, title: "梅響", discription: "管弦楽演奏", subTitle: null, color: "orange" },
     { start: "13:15", length: 25, title: "2026 有志吹奏楽団", discription: "吹奏楽演奏", subTitle: null, color: "orange" },
-    { start: "14:05", length: 30, title: "福高チアリーダー部", discription: null, subTitle: null, color: "pink" },
-    { start: "14:35", length: 30, title: "RAWKZM", discription: "ダンス", subTitle: null, color: "pink" },
+    { start: "14:05", length: 30, title: "福高チアリーダー部", discription: "ダンス", subTitle: null, color: "pink" },
+    { start: "14:35", length: 30, title: "RAWKZM(ローズ)", discription: "ダンス", subTitle: null, color: "pink" },
     { start: "15:05", length: 25, title: "じゅりっこ", discription: "ダンス", subTitle: null, color: "pink" },
   ],
   date2: [
@@ -189,7 +189,7 @@ function TimeTable() {
             <div className="text-center text-lg font-semibold">2日目 (8/23)</div>
             <div className="relative mx-2 md:mx-8" style={{ top: '11px' }}>
               {TimeTableData.date2.map((v, i) => (
-                <TimeTableItem setOpenModal={setOpenModal} start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} ind={i+12} />
+                <TimeTableItem setOpenModal={setOpenModal} start={v.start} length={v.length} title={v.title} subTitle={v.subTitle} discription={v.discription} key={i} color={v.color} ind={i+11} /> //ind = i + (1日目の1体発表団体数)
               ))}
             </div>
             <div className="relative" style={{ top: '11px' }}>
