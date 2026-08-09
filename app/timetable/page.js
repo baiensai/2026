@@ -23,10 +23,7 @@ const TimeTableData = {
     { start: "15:05", length: 25, title: "じゅりっこ", discription: "ダンス", subTitle: null, color: "pink" },
   ],
   date2: [
-    {
-      start: "09:30", length: 15,
-      title: "無念晴ラスメント", subTitle: null, discription: "バンド", color: "orange"
-    },
+    { start: "09:30", length: 15, title: "無念晴ラスメント", subTitle: null, discription: "バンド", color: "orange"},
     { start: "09:55", length: 15, title: "GaiZies（ギャイザイズ）", subTitle: null, discription: "バンド", color: "orange" },
     { start: "10:20", length: 25, title: "残業AED", subTitle: null, discription: "バンド", color: "orange" },
     { start: "10:55", length: 20, title: "Jazz研究部", subTitle: null, discription: "ジャズ演奏", color: "orange" },
