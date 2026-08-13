@@ -124,7 +124,7 @@ function Info() {
           <div className="pl-4 mt-2">
             <p className="text-lg mb-2 font-medium">福島県立福島高等学校</p>
             <p className="text-base text-gray-600 mb-2">福島県福島市森合町5-72</p>
-            <p className="text-lg">駐車場がありませんので公共交通機関をご利用ください</p>
+            <p className="text-lg">駐車場がありませんので、公共交通機関をご利用ください。</p>
           </div>
           <div className="px-4 mt-2">
             <iframe

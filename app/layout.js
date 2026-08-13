@@ -43,20 +43,17 @@ export default function RootLayout({ children }) {
             />
           </NavbarBrand>
           <NavbarToggle />
-          現在準備中です。本公開は8月上旬を予定しています。
-          {/*}
           <NavbarCollapse>
             <NavbarLink href="projects">企画</NavbarLink>
             <NavbarLink href="info">案内</NavbarLink>
             <NavbarLink href="timetable">スケジュール</NavbarLink>
             <NavbarLink href="map">マップ</NavbarLink>
           </NavbarCollapse>
-          */}
         </Navbar>
 
         {children}
 
-        <Footer container className="bg-pink-50 !rounded-none">
+        <Footer container className="bg-rose-50 !rounded-none">
           <div className="w-full text-center">
             <div className="w-full justify-between flex items-center">
               <FooterBrand

@@ -7,16 +7,9 @@ const news = [
   {
     title: "公式サイト開設",
     content: "梅苑祭2026公式ウェブサイトを開設しました。最新情報や詳細を確認できます。",
-    date: "2026.08.08"
+    date: "2026.08.13"
   },
 ]
-
-import { redirect } from "next/navigation";
-
-export default function temporary() {
-  redirect("/temporary");
-}
-
 
 function Index() {
   return (
@@ -102,4 +95,4 @@ function Index() {
   )
 }
 
-/* export default Index */
+export default Index
