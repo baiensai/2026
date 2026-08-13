@@ -541,7 +541,7 @@ const datas = [
 <br />
 あなたもおもちゃになってアリスと一緒に犯人を見つけよう!
     </p>,
-    timeDescription: <img src='3-1table.jpg' />,
+    /* timeDescription: <img src='3-1table.jpg' />, */
     map: 2,
     pos: [228, 187]
   },
@@ -563,7 +563,7 @@ const datas = [
       3年2組では、 笑えるコメディの「肺炎球菌編」、笑いと涙のアクション「インフルエンザ編」、そして切ない「がん細胞編」と、3つの劇を上演！それぞれ違った魅力を楽しめます！また270度演出で、まるで自分が体内に入ってしまったような感覚が味わえます！<br />
       細胞たちはどのように働いてるのだろうか。その答えは3年2組の｢体内｣にあります。細胞たちの戦いをぜひその目で目撃しよう！！
     </p>,
-    timeDescription: <img src='3-2table.jpg' />,
+    /* timeDescription: <img src='3-2table.jpg' />, */
     map: 2,
     pos: [228, 143]
   },
@@ -589,7 +589,7 @@ const datas = [
       3年3組がお送りするのは選択型劇「Rewrite The world」です!<br />
       観客の皆さんの選択で、予言により定められた世界の運命を書き換えてください!!
     </p>,
-    timeDescription: <img src='3-3table.jpg' />,
+    /* timeDescription: <img src='3-3table.jpg' />, */
     map: 2,
     pos: [228, 99]
   },
@@ -643,7 +643,7 @@ const datas = [
     modalDescription: <p>
       魔法学校・福島ホグワーツで、炎を住みかとする魔法生物・火蜥蜴(サラマンダー)に起きた謎の事件。ハリー、ロン、ハーマイオニーは調査を開始するも、事件の真相の鍵を握るのは、それぞれが持つ「記憶」。しかし、見ることができる記憶はたった一人分だけ。誰の記憶を再生するかは、観客の皆さんの投票で決まります。あなたの一票が物語を左右する、参加型のオリジナルストーリー。ハリーたちは、サラマンダーを救い、謎を解き明かすことはできるのでしょうか。
     </p>,
-    timeDescription: <img src='3-5table.jpg' />,
+    /* timeDescription: <img src='3-5table.jpg' />, */
     map: 2,
     pos: [110, 54]
   },
@@ -660,7 +660,7 @@ const datas = [
 `,
     modalDescription: <p>
     </p>,
-    timeDescription: <img src='3-6table.jpg' />,
+    /* timeDescription: <img src='3-6table.jpg' />, */
     map: 2,
     pos: [68, 54]
   },
@@ -673,7 +673,7 @@ const datas = [
     ],
     title: "レ・ミゼラブル",
     organization: "",
-    timeDescription: <img src='3-7table.jpg' />,
+    /* timeDescription: <img src='3-7table.jpg' />, */
     description: `3-7 「30分de名著『レ・ミゼラブル（Les Misérables）』」
 
 19世紀フランス。貧困や不平等、無慈悲な法律が敷かれた時代に、社会の救済と人間の愛を描いた不朽の名作「レ・ミゼラブル」。
