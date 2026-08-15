@@ -25,7 +25,7 @@ const datas = [
   },
   {
     icon: "/icons/3.png",
-    place: "1体後方",
+    place: "1体ステージ",
     tags: [
       { color: "blue", text: "バンド" },
       { color: "blue", text: "有志" },
@@ -510,9 +510,9 @@ const datas = [
     ],
     title: "SKY JOURNEY　〜太古の空へ〜",
     organization: "",
-    description: `
+    description: `恐竜の世界を舞台にした体験型企画です！恐竜のアトラクションを楽しみながら、卵探しにも挑戦していただきます。卵探しは4段階のレベルを用意しており、自分に合った難易度で楽しめます。さらに、恐竜の卵をモチーフにしたかわいいフォトスポットもご用意！恐竜の世界を楽しみながら、思い出に残る写真を撮ることができます。友達や家族と一緒に、ぜひ恐竜の世界への冒険をお楽しみください！
 `,
-    modalDescription: <p>
+    modalDescription: <p>恐竜の世界を舞台にした体験型企画です！恐竜のアトラクションを楽しみながら、卵探しにも挑戦していただきます。卵探しは4段階のレベルを用意しており、自分に合った難易度で楽しめます。さらに、恐竜の卵をモチーフにしたかわいいフォトスポットもご用意！恐竜の世界を楽しみながら、思い出に残る写真を撮ることができます。友達や家族と一緒に、ぜひ恐竜の世界への冒険をお楽しみください！
     </p>,
     map: 3,
     pos: [25, 54]
@@ -698,15 +698,16 @@ Do you hear the people sing？
   },
   {
     icon: "/icons/99.png",
-    place: "地学講義室",
+    place: "化学実験室",
     tags: [
       { color: "blue", text: "有志" },
+      { color: "blue", text: "特別有志" },
     ],
     title: "将棋部部員との対局",
     organization: "",
     timeDescription: "1日目11:00~14:30 2日目10:00~13:30",
-    map: 5,
-    pos: [118, 269]
+    map: 1,
+    pos: [228, 187]
   },
   {
     icon: "/icons/99.png",
@@ -752,12 +753,24 @@ Do you hear the people sing？
     icon: "/icons/99.png",
     place: "2体",
     tags: [
-      { color: "blue", text: "展示" },
+      { color: "blue", text: "特別有志" },
       { color: "blue", text: "有志" },
     ],
     title: "うちわの文字入れ",
     organization: "書道部",
     timeDescription: "1日目は午後から 2日目は午前から",
+  },
+  {
+    icon: "/icons/99.png",
+    place: "生物実験室",
+    tags: [
+      { color: "blue", text: "特別有志" },
+      { color: "blue", text: "有志" },
+    ],
+    title: "囲碁部部員との対局",
+    organization: "囲碁部",
+    map: 1,
+    pos: [228, 76]
   },
   {
     icon: "/icons/24.png",

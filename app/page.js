@@ -5,6 +5,15 @@ import { GoDotFill } from "react-icons/go"
 
 const news = [
   {
+    title: "サイト更新",
+    content: [
+      "新たにキッチンカーのメニューを公開しました。詳細は「",
+      { text: "案内", href: "/info" },
+      "」ページをご覧ください。"
+    ],
+    date: "2026.08.15"
+  },
+  {
     title: "公式サイト開設",
     content: "梅苑祭2026公式ウェブサイトを開設しました。最新情報や詳細を確認できます。",
     date: "2026.08.13"
@@ -84,7 +93,23 @@ function Index() {
                 <div>
                   <p className="text-xl font-medium">{v.title}</p>
                   <p className="text-sm">{v.date}</p>
-                  <p className="text-gray-700">{v.content}</p>
+                  <p className="text-gray-700">
+                    {Array.isArray(v.content) ? (
+                      <>
+                        {v.content.map((part, idx) => 
+                          typeof part === 'string' ? (
+                            <span key={idx}>{part}</span>
+                          ) : (
+                            <Link key={idx} href={part.href} className="text-blue-600 hover:underline">
+                              {part.text}
+                            </Link>
+                          )
+                        )}
+                      </>
+                    ) : (
+                      v.content
+                    )}
+                  </p>
                 </div>
               </div>
             ))

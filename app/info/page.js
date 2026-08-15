@@ -1,6 +1,7 @@
 import { HiExclamation, HiCalendar, HiMap, HiQuestionMarkCircle } from "react-icons/hi"
 import { Accordion, AccordionContent, AccordionPanel, accordionTheme, AccordionTitle, ThemeProvider } from "flowbite-react"
-
+import { IoFastFood } from "react-icons/io5";
+import Image from "next/image"
 const precautions = [
   "上履きをご持参ください。",
   "ごみは設置してあるゴミ箱に捨ててください。",
@@ -99,7 +100,16 @@ function Info() {
             ))}
           </div>
         </div>
-
+        <div className="mt-10">
+          <div className="flex items-center">
+            <IoFastFood className="w-12 h-12 mr-4" />
+            <p className="text-2xl font-medium">キッチンカーのメニュー</p>
+          </div>
+          <div className="pl-4 mt-2 flex flex-col md:flex-row gap-4 justify-center">
+            <Image alt='' width={1667} height={1049} src='/menu/1.jpg' className="rounded-xl mb-8 md:mb-0 w-full max-w-sm" />
+            <Image alt='' width={1667} height={1049} src='/menu/2.jpg' className="rounded-xl mb-8 md:mb-0 w-full max-w-sm" />
+          </div>
+        </div>
         <div className="mt-10 mb-10">
           <div className="flex items-center">
             <HiQuestionMarkCircle className="w-12 h-12 mr-4" />
