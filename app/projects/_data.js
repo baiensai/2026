@@ -751,7 +751,7 @@ Do you hear the people sing？
   },
   {
     icon: "/icons/99.png",
-    place: "2体",
+    place: "梅苑図書館1階",
     tags: [
       { color: "blue", text: "特別有志" },
       { color: "blue", text: "有志" },
