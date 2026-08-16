@@ -128,7 +128,7 @@ function TimeTable() {
         </ModalBody>
       </Modal>
 
-      <p className="text-3xl font-semibold text-center mt-6">1体タイムテーブル</p>
+      <p className="text-3xl font-semibold text-center mt-6">第1体育館タイムテーブル</p>
 
       <div className="mx-2 md:mx-8 sm:px-10 mt-6 mb-8">
 

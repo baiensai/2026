@@ -22,18 +22,35 @@ const news = [
 
 function Index() {
   return (
-    <div className="px-2 sm:px-4 max-w-4xl mx-auto mt-10">
-      <div className="mb-6 px-4">
-        <p className="text-xl font-medium mb-4">福島高校文化祭 梅苑祭2026</p>
-        <p className="text-[3.75em] font-bold">
-        <img src="sparkling.svg"></img></p>
-        {/* <p className="text-2xl">ー 可能性を超えろ</p> */}
-        <div className="flex justify-center mt-4 mb-4">
-          <div className="w-60"> 
-            <Button color="light" pill as={Link} href="/theme"><HiOutlineArrowRight className="mr-2 h-3 w-3" />テーマについて</Button>
+    <>
+      {/* フルワイドヒーローセクション */}
+      <div 
+        className="w-screen relative -ml-[calc((100vw-100%)/2)] mb-6 py-12 md:py-20 overflow-hidden"
+        style={{
+          backgroundImage: "url('/herosection2.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* オーバーレイ */}
+        <div className="absolute inset-0 bg-white/10"></div>
+        
+        {/* コンテンツ */}
+        <div className="relative z-10 px-4 sm:px-4 max-w-4xl mx-auto text-center">
+          <p className="text-xl font-medium mb-4 text-white">福島高校文化祭 梅苑祭2026</p>
+          <p className="text-[3.75em] font-bold">
+          <img src="sparkling.svg"></img></p>
+          {/* <p className="text-2xl">ー 可能性を超えろ</p> */}
+          <div className="flex justify-center mt-4 mb-4">
+            <div className="w-60"> 
+              <Button color="light" pill as={Link} href="/theme"><HiOutlineArrowRight className="mr-2 h-3 w-3" />テーマについて</Button>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* メインコンテンツ */}
+      <div className="px-2 sm:px-4 max-w-4xl mx-auto mt-10">
 
       <div className="mx-auto px-4">
         <div className="flex flex-col md:flex-row">
@@ -116,7 +133,8 @@ function Index() {
           }
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 

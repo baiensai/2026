@@ -100,24 +100,24 @@ export default function Map() {
         <Image alt='' width={1667} height={1049} src='/maps/0.jpg' className="rounded-xl mb-8" />
 
         <div className="flex justify-between items-center mb-4">
-          <p className="text-xl font-semibold">3,4棟</p>
+          <p className="text-xl font-semibold">校舎3,4棟</p>
           <FloorSelector setSelected={setSelected34} selected={selected34} floors={floors34} />
         </div>
         <ZoomableMap aspect={'1'} imgSrc={selected34} setOpenModal={setOpenModal} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
-          <p className="text-xl font-semibold">1,2棟</p>
+          <p className="text-xl font-semibold">校舎1,2棟</p>
           <FloorSelector setSelected={setSelected12} selected={selected12} floors={floors12} />
         </div>
         <ZoomableMap aspect={'1.16'} imgSrc={selected12 + 4} setOpenModal={setOpenModal} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
-          <p className="text-xl font-semibold">1体</p>
+          <p className="text-xl font-semibold">第1体育館</p>
         </div>
         <ZoomableMap aspect={'1.38'} imgSrc={`8`} setOpenModal={setOpenModal} />
 
         <div className="flex justify-between items-center mb-4 mt-12">
-          <p className="text-xl font-semibold">2体</p>
+          <p className="text-xl font-semibold">第2体育館</p>
         </div>
         <ZoomableMap aspect={'1.2'} imgSrc={`9`} setOpenModal={setOpenModal} />
 
