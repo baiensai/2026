@@ -65,7 +65,8 @@ function Index() {
               <p className="text-2xl mb-1">1日目 11:00-15:30</p>
               <p className="text-lg ml-4 mb-4">(オープニングセレモニー 10:50~)</p>
               <p className="text-2xl mb-4">2日目 09:30-14:30</p>
-              <p>入場は終了時刻30分前まで</p>
+                <p>入場は終了時刻30分前まで</p>
+                
             </div>
           </div>
 
