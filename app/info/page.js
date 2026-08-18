@@ -86,6 +86,7 @@ function Info() {
             <p className="text-lg">2026/8/22(土) 11:00~15:30(10:40からオープニングセレモニー)</p>
             <p className="text-lg">2026/8/23(日) 9:30~14:30</p>
             <p className="text-base text-gray-600">入場は終了時間の30分前まで</p>
+            <p className="text-base text-gray-600">チアリーダー部によるオープニングセレモニーのパフォーマンスが終了次第一般公開が開始します。</p>
           </div>
         </div>
 
