@@ -48,6 +48,7 @@ export default function RootLayout({ children }) {
             <NavbarLink href="info">案内</NavbarLink>
             <NavbarLink href="timetable">スケジュール</NavbarLink>
             <NavbarLink href="map">マップ</NavbarLink>
+            <NavbarLink href="arch">アーチ紹介</NavbarLink>
           </NavbarCollapse>
         </Navbar>
 
